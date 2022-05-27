@@ -1,22 +1,38 @@
+from crypt import methods
 from distutils.dir_util import remove_tree
-from flask import Flask, make_response, render_template
-import pdfkit
+import json
+import re
+import time
+from urllib import response
+from flask import Flask, make_response, render_template, request
+import pdfkit 
+import os
+
+
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def index():
+    print(request.method)  
+    if request.method=='GET':
+        rendered = render_template('chart.html')
+        data=request.data.decode('UTF-8')  
+    if request.method=='POST':
+        print()
+        rendered = render_template('index.html',img=data)
     
-    rendered = render_template('index.html')
-
     options = {
+        
     'page-size': 'A4',
     'margin-right': '0.25in',
     'margin-bottom': '0.25in',
     'margin-left': '0.30in',
     'margin-top':'0.25in',
     }
+
+    
     
 
 

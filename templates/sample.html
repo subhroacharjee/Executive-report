@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+    .reportGraph {width:900px}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+
+<div class="reportGraph"><canvas id="myChart"></canvas></div>
+
+<script type="text/javascript">
+// wkhtmltopdf 0.12.5 crash fix.
+// https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3242#issuecomment-518099192
+'use strict';
+(function(setLineDash) {
+    CanvasRenderingContext2D.prototype.setLineDash = function() {
+        if(!arguments[0].length){
+            arguments[0] = [1,0];
+        }
+        // Now, call the original method
+        return setLineDash.apply(this, arguments);
+    };
+})(CanvasRenderingContext2D.prototype.setLineDash);
+Function.prototype.bind = Function.prototype.bind || function (thisp) {
+    var fn = this;
+    return function () {
+        return fn.apply(thisp, arguments);
+    };
+};
+
+function drawGraphs() {
+    const labels = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+      ];
+    
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'My First dataset',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+      };
+    
+      const config = {
+        type: 'line',
+        data: data,
+        options: {animation: false,}
+      };
+      const myChart = new Chart(document.getElementById('myChart'),config);
+
+    }
+window.onload = function() {
+    drawGraphs();
+};
+</script>
+</body>
+</html>
