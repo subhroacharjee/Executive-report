@@ -169,8 +169,10 @@
         </div>
       </div>
     </div>
-
-    <img src="data:image/png;base64,{{ img['image'] }}" style="height:600px;padding-left:50px">
-{{img["name"]}}
+    {% for i in img %}
+    <div style="padding-left: 80px;">
+      <img src="{{i}}" alt="" width="700px";height="700px">
+    </div>
+    {% endfor %}
   </body>
 </html>
