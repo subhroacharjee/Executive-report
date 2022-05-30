@@ -1,0 +1,180 @@
+{
+    "status": "success",
+    "data": {
+      "top_performing_creatives": [
+        {
+          "asset_id": "383500156692966",
+          "asset_name": "HoV_SunMoonStars_V36506_15_AndroidiOSPC_English_Landscape&IMG=S62.mp4",
+          "composite_metric": 0,
+          "asset_type": "VIDEO",
+          "preview_url": "",
+          "advertiser_priority": "1",
+          "is_active": true,
+          "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/277559667_2270967629708414_6562747460556146561_n.jpg",
+          "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_SunMoonStars_V36506_15_AndroidiOSPC_English_Landscape%26IMG%3DS62.mp4",
+          "global_performance": 0.023,
+          "creative_performance": 0.216,
+          "roas_d0": 0.145986206896552,
+          "roas_d7": 0.441379310344828,
+          "cpup": 145,
+          "d1": 21.168,
+          "d7": 64,
+          "cpi": 2.78846153846154,
+          "cpc": 0,
+          "arpu": 64,
+          "ipm": 3.77396768402154,
+          "ppm": 0,
+          "unique_purchases": 1,
+          "cpm": 10.5235637342908,
+          "cpa": 0,
+          "ctr": 0,
+          "cvr": 0,
+          "installs": 52,
+          "impressions": 13778.6023500309,
+          "clicks": 0,
+          "spend": 145
+        },
+        {
+          "asset_id": "418195410106603",
+          "asset_name": "HoV_MultipleBuffalo_V39142_30_AndroidiOSPC_English_Landscape&IMG=U7A.mp4",
+          "composite_metric": 0.360464113638457,
+          "asset_type": "VIDEO",
+          "preview_url": "",
+          "advertiser_priority": "1",
+          "is_active": true,
+          "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/275600031_1119044552229002_2707017353719243554_n.jpg",
+          "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MultipleBuffalo_V39142_30_AndroidiOSPC_English_Landscape%26IMG%3DU7A.mp4",
+          "global_performance": 0.0164190595089471,
+          "creative_performance": 0.153142857142857,
+          "roas_d0": 0.219138947368421,
+          "roas_d7": 0.222169473684211,
+          "cpup": 237.5,
+          "d1": 208.182,
+          "d7": 211.061,
+          "cpi": 20.6521739130435,
+          "cpc": 0,
+          "arpu": 52.76525,
+          "ipm": 1.26352235131184,
+          "ppm": 0,
+          "unique_purchases": 4,
+          "cpm": 26.0944833423098,
+          "cpa": 0,
+          "ctr": 0,
+          "cvr": 0,
+          "installs": 46,
+          "impressions": 36406.162464986,
+          "clicks": 0,
+          "spend": 950
+        },
+        {
+          "asset_id": "462918695443500",
+          "asset_name": "HoV_FuDaiLianLianPanda_V37261_15_AndroidiOSPC_English_Portrait&IMG=SR1.mp4",
+          "composite_metric": 1.66081816355578,
+          "asset_type": "VIDEO",
+          "preview_url": "",
+          "advertiser_priority": "1",
+          "is_active": true,
+          "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/271802340_462919185443451_4922111000344425174_n.jpg",
+          "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_FuDaiLianLianPanda_V37261_15_AndroidiOSPC_English_Portrait%26IMG%3DSR1.mp4",
+          "global_performance": 0.0202898550724638,
+          "creative_performance": 0.0841666666666667,
+          "roas_d0": 0.106269351793581,
+          "roas_d7": 0.263058527375708,
+          "cpup": 529.666666666667,
+          "d1": 168.862,
+          "d7": 418,
+          "cpi": 30.5576923076923,
+          "cpc": 0,
+          "arpu": 139.333333333333,
+          "ipm": 1.60865594706192,
+          "ppm": 0,
+          "unique_purchases": 3,
+          "cpm": 49.1568134592575,
+          "cpa": 0,
+          "ctr": 0,
+          "cvr": 0,
+          "installs": 52,
+          "impressions": 32325.1221586405,
+          "clicks": 0,
+          "spend": 1589
+        }
+      ],
+      "primary_colors": [
+        {
+          "base": "#800000",
+          "name": "maroon",
+          "original": "#6d1a1c"
+        },
+        {
+          "base": "#f4a460",
+          "name": "sandybrown",
+          "original": "#dea862"
+        },
+        {
+          "base": "#66cdaa",
+          "name": "mediumaquamarine",
+          "original": "#6cb6cd"
+        },
+        {
+          "base": "#4682b4",
+          "name": "steelblue",
+          "original": "#2469b2"
+        },
+        {
+          "base": "#b22222",
+          "name": "firebrick",
+          "original": "#bc232e"
+        },
+        {
+          "base": "#191970",
+          "name": "midnightblue",
+          "original": "#0e2848"
+        },
+        {
+          "base": "#556b2f",
+          "name": "darkolivegreen",
+          "original": "#7b6a39"
+        },
+        {
+          "base": "#483d8b",
+          "name": "darkslateblue",
+          "original": "#6c3b6e"
+        },
+        {
+          "base": "#d2b48c",
+          "name": "tan",
+          "original": "#d2aa84"
+        },
+        {
+          "base": "#5f9ea0",
+          "name": "cadetblue",
+          "original": "#65aec3"
+        }
+      ],
+      "tags": [
+        "Gambling",
+        "Game",
+        "Slot",
+        "Pac Man",
+        "Wristwatch",
+        "Advertisement",
+        "Poster",
+        "Purple",
+        "Art",
+        "Diwali",
+        "Arcade Game Machine",
+        "Text",
+        "Modern Art",
+        "Graphics",
+        "Outdoors",
+        "Light",
+        "Legend of Zelda",
+        "Parade",
+        "Nature",
+        "Brochure",
+        "Flyer",
+        "Paper",
+        "Neon"
+      ]
+    }
+  }
