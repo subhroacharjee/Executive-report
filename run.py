@@ -1,13 +1,7 @@
-from cProfile import label
-from dataclasses import dataclass
 import json
-from re import L
-from urllib import response
-from flask import Flask, make_response, render_template, request
+from flask import Flask, make_response, render_template
 import pdfkit
 import datetime
-
-import urllib.parse
 from quickchart import QuickChart, QuickChartFunction
 
 
@@ -34,7 +28,7 @@ def index():
     for i in p_data:
         img_list.append(chartjs(p_data[i],label['label'],i))
 
-    rendered = render_template('index.html',img=img_list)
+    rendered = render_template('index.html',img=img_list,top_creative=top_creative)
     
     options = {
         
@@ -58,7 +52,6 @@ def index():
 
 def process_data(data):
     keys=data['data']['filter_metrics']
-    print(keys)
     process_data=data['data']['time_series_graph']
     label=dict()
     temp_dict=dict()
@@ -75,10 +68,7 @@ def process_data(data):
 
 
 def chartjs(data,label,key):
-
     key=key.upper()
-
-
     #label = ','.join([str(a) for a in label])
     #data = ','.join([str(a) for a in data])
 
@@ -87,8 +77,8 @@ def chartjs(data,label,key):
     qc.height = 480
     qc.device_pixel_ratio = 3.0
     qc.version=3
-    qc.scheme='http'
-    qc.host='localhost:3400'
+    #qc.scheme='http'
+    #qc.host='localhost:3400'
     
     qc.config = {
          'type': 'line', 

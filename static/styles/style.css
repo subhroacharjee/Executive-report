@@ -31,3 +31,80 @@ hr.vertical {
     border-radius: 50%;
     display: inline-block;
   }
+
+  #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+#customers td, #customers th {
+  border: 0px solid #ddd;
+  padding: 8px;
+}
+#customers tr
+{
+    border-bottom: 1px solid #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#ededed;;
+  color: rgb(137, 131, 131);
+}
+
+.heading{
+    border: 1px solid rgb(224, 217, 217);
+    padding: 20px;
+    width: 97%;
+    border-radius: 10px;
+}
+
+#customers td img{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+
+
+
+  .colorbox{
+    border: 1px solid rgb(224, 217, 217);
+    width: 100%;
+    border-radius: 5px;
+    height: max-content;
+    
+}
+
+    .tagbox{
+        border: 1px solid rgb(224, 217, 217);
+        width: 100%;
+        border-radius: 5px;
+        height: max-content}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: var(--color);
+    border-radius: 50%;
+    display: inline-block;
+    margin:20px;
+  }
+
+  hr{
+    width: 100%;
+  }
+
+  .tags{
+    border-radius: 20%;
+    width: max-content;
+    height: max-content;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid rgb(224, 217, 217);
+  }
