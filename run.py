@@ -1,37 +1,42 @@
 import json
 from locale import YESEXPR
-from flask import Flask, jsonify, make_response, render_template
+from flask import Flask, jsonify, make_response, render_template, request
 import pdfkit
 import datetime
 from quickchart import QuickChart, QuickChartFunction
 
-
+from src.communication import Communication
+from src.parser import get_data_from_request
+config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf')
 
 app = Flask(__name__)
 data = {}
 #Read Data from Json
-with open('Data/Time series graph.json', 'r') as f1:
-  data = json.load(f1)
-
-with open('Data/Metrics.json', 'r') as f2:
-  metrics = json.load(f2)
-
-with open('Data/Top Creative Insights.json', 'r') as f3:
-  top_creative = json.load(f3)
+data = None
+metrics = None
+top_creative = None
 
 
 @app.route('/',methods=['GET','POST'])
 def index():
-
+    req_data = get_data_from_request(request)
+    if not req_data:
+        raise Exception('Invalid data')
+    comm = Communication(req_data['adaccount_id'], req_data['start_date'], req_data['end_date'], req_data['phase_name'])
+    server_data = comm.make_async_requests()
+    metrics = server_data[0]
+    data = server_data[1]
+    top_creative = server_data[2]
     p_data,label=process_data(data)
 
-    date=index_date(metrics['data']['date_range'])
+    date=index_date(metrics['date_range'])
     print(date)
     img_list=[]
     for i in p_data:
         img_list.append(chartjs(p_data[i],label['label'],i))
 
-    rendered = render_template('index.html',index_date=date,img=img_list,metrics=metrics,top_creative=top_creative)
+    phase_name = 'Phase 1' if req_data['phase_name'].upper() == 'PHASE_ONE' else 'Phase 2'
+    rendered = render_template('index.html',index_date=date,img=img_list,metrics=metrics,top_creative=top_creative, phase_name = phase_name)
     
     options = {
         
@@ -43,7 +48,7 @@ def index():
     }
 
 
-    pdf=pdfkit.from_string(rendered,options=options)
+    pdf=pdfkit.from_string(rendered,options=options, configuration=config, verbose=True)
 
     response = make_response(pdf)
     response.headers['Content-type']='application/pdf'
@@ -54,8 +59,8 @@ def index():
 
 
 def process_data(data):
-    keys=data['data']['filter_metrics']
-    process_data=data['data']['time_series_graph']
+    keys=data['filter_metrics']
+    process_data=data['time_series_graph']
     label=dict()
     temp_dict=dict()
     for i in keys:
@@ -76,13 +81,10 @@ def chartjs(data,label,key):
     #data = ','.join([str(a) for a in data])
 
     qc = QuickChart()
-    qc.width = 800
-    qc.height = 480
+    qc.width = 400
+    qc.height = 240
     qc.device_pixel_ratio = 3.0
     qc.version=3
-    qc.scheme='http'
-    qc.host='localhost:3400'
-    
     qc.config = {
          'type': 'line', 
          'data': { 
@@ -130,5 +132,5 @@ def index_date(date):
     return final
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8000)
     app.run(debug=True)

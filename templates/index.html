@@ -45,15 +45,15 @@
       <div class="card">
         <div style="width: 25%; text-align: center">
           <p ><i class="fa fa-circle" style="color: #0080ff"></i> Spend</p>
-          <h2>${{metrics['data']['performance_metrics']['spend']['value']}}</h2>
+          <h2>${{metrics['performance_metrics']['spend']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['spend']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['spend']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['spend']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['spend']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['spend']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['spend']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -61,15 +61,15 @@
         <hr class="vertical" />
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #ffff00"></i> IMP AVG</p>
-          <h2>{{metrics['data']['performance_metrics']['ipm']['value']}}%</h2>
+          <h2>{{metrics['performance_metrics']['ipm']['value']}}%</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['ipm']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['ipm']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['ipm']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['ipm']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['ipm']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['ipm']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -77,15 +77,15 @@
         <hr class="vertical" />
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #8000ff"></i> CPI AVG</p>
-          <h2>${{metrics['data']['performance_metrics']['cpi']['value']}}</h2>
+          <h2>${{metrics['performance_metrics']['cpi']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['cpi']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['cpi']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpi']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpi']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpi']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpi']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -93,15 +93,15 @@
         <hr class="vertical" />
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #ff00ff"></i> CPM AVG</p>
-          <h2>${{metrics['data']['performance_metrics']['cpm']['value']}}</h2>
+          <h2>${{metrics['performance_metrics']['cpm']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['cpm']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['cpm']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpm']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpm']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpm']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpm']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -111,15 +111,15 @@
       <div class="card">
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #2bcae1"></i> CPA</p>
-          <h2>{{metrics['data']['performance_metrics']['cpa']['value']}}</h2>
+          <h2>{{metrics['performance_metrics']['cpa']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['cpa']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['cpa']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpa']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpa']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpa']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpa']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -127,15 +127,15 @@
         <hr class="vertical" />
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #a520ee"></i> CTR</p>
-          <h2>{{metrics['data']['performance_metrics']['ctr']['value']}}</h2>
+          <h2>{{metrics['performance_metrics']['ctr']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['ctr']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['ctr']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['ctr']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['ctr']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['ctr']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['ctr']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -143,15 +143,15 @@
         <hr class="vertical" />
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #ef6d0a"></i> CTI</p>
-          <h2>{{metrics['data']['performance_metrics']['cti']['value']}}</h2>
+          <h2>{{metrics['performance_metrics']['cti']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['cti']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['cti']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cti']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cti']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cti']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cti']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -159,15 +159,15 @@
         <hr class="vertical" />
         <div style="width: 25%; text-align: center">
           <p><i class="fa fa-circle" style="color: #ef1f0a"></i> CPUP</p>
-          <h2>${{metrics['data']['performance_metrics']['cpup']['value']}}</h2>
+          <h2>${{metrics['performance_metrics']['cpup']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['performance_metrics']['cpup']['status']=='ABOVE'%}
+            {% if metrics['performance_metrics']['cpup']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpup']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpup']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['performance_metrics']['cpup']['inflation_percent']}}</i>
+              {{metrics['performance_metrics']['cpup']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -179,15 +179,15 @@
           <p>
             <i class="fa fa-circle" style="color: #2bcae1"></i> Creatives Tested
           </p>
-          <h2>${{metrics['data']['creative_metrics']['tested_creatives']['value']}}</h2>
+          <h2>${{metrics['creative_metrics']['tested_creatives']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['creative_metrics']['tested_creatives']['status']=='ABOVE'%}
+            {% if metrics['creative_metrics']['tested_creatives']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['creative_metrics']['tested_creatives']['inflation_percent']}}</i>
+              {{metrics['creative_metrics']['tested_creatives']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['creative_metrics']['tested_creatives']['inflation_percent']}}</i>
+              {{metrics['creative_metrics']['tested_creatives']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -197,15 +197,15 @@
           <p>
             <i class="fa fa-circle" style="color: #a520ee"></i> Above Threshold
           </p>
-          <h2>${{metrics['data']['creative_metrics']['above_threshold_creatives']['value']}}</h2>
+          <h2>${{metrics['creative_metrics']['above_threshold_creatives']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['creative_metrics']['above_threshold_creatives']['status']=='ABOVE'%}
+            {% if metrics['creative_metrics']['above_threshold_creatives']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}</i>
+              {{metrics['creative_metrics']['above_threshold_creatives']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}</i>
+              {{metrics['creative_metrics']['above_threshold_creatives']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -215,15 +215,15 @@
           <p>
             <i class="fa fa-circle" style="color: #ef6d0a"></i> Below Threshold
           </p>
-          <h2>${{metrics['data']['creative_metrics']['below_threshold_creatives']['value']}}</h2>
+          <h2>${{metrics['creative_metrics']['below_threshold_creatives']['value']}}</h2>
           <p>
 
-            {% if metrics['data']['creative_metrics']['below_threshold_creatives']['status']=='ABOVE'%}
+            {% if metrics['creative_metrics']['below_threshold_creatives']['status']=='ABOVE'%}
             <i class="fa fa-caret-up" style="color: green; font-size: 25px">
-              {{metrics['data']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}</i>
+              {{metrics['creative_metrics']['below_threshold_creatives']['inflation_percent']}}</i>
             {%else%}
             <i class="fa fa-caret-down" style="color: red; font-size: 25px">
-              {{metrics['data']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}</i>
+              {{metrics['creative_metrics']['below_threshold_creatives']['inflation_percent']}}</i>
             {%endif%}
             VS Prev. 7 Days
           </p>
@@ -271,7 +271,7 @@
     <th>CPUP</th>
     <th>STATUS</th>
   </tr>
-{% for i in top_creative['data']['top_performing_creatives']%}
+{% for i in top_creative['top_performing_creatives']%}
   <tr>
     <td><img src={{i['image_url']}}></td>
     <td>#{{i['advertiser_priority']}}</td>
@@ -298,7 +298,7 @@
     <div class="colorbox">
       <p style="padding-left: 10px;font-size: 20px;">Top Colors</p>
       <hr>
-      {% for i in top_creative['data']['primary_colors']%}
+      {% for i in top_creative['primary_colors']%}
       <div class="circle" style="--color:{{i['base']}}"></div>
       {% endfor %}
     </div>
@@ -309,7 +309,7 @@
     <div class="tagbox">
       <p style="padding-left: 10px;font-size: 20px;">Top Tags</p>
       <hr>
-      {% for i in top_creative['data']['tags']%}
+      {% for i in top_creative['tags']%}
       <div class="tags">{{i}}</div>
       {% endfor %}
     </div>
