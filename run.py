@@ -31,7 +31,7 @@ def index():
     for i in p_data:
         img_list.append(chartjs(p_data[i],label['label'],i))
 
-    rendered = render_template('index.html',index_date=date,img=img_list,top_creative=top_creative)
+    rendered = render_template('index.html',index_date=date,img=img_list,metrics=metrics,top_creative=top_creative)
     
     options = {
         
