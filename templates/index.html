@@ -17,14 +17,39 @@
   </head>
   <body>
     <div style="height: 1220px">
-      <div style="padding-top: 500px">
-        <h1 style="text-align: center">Creative Testing Executive Report</h1>
-      </div>
+
+      <div class="indexpagetop">
+        <div style="padding:50px;">
+          <img src="{{ url_for('static',filename='logo/blkbox-black-logo.png',_external=True) }}" class="headerimg">
+        </div>
+        </div>
+          <div style="padding-left: 100px;padding-top: 50px;">
+            <div style="font-weight: bold;font-size: 150px;">Creative<br>
+            Testing</div>
+            <div style="font-weight: bold;font-size: 150px;color: #0099ff;">Executive 
+            <br>Report</div>
+          </div>
+          <div style="padding-left: 100px;padding-top: 150px;">
+            <h1 style="color: #707B7C;">{{index_date['day']}} ,{{index_date['year']}}</h1>
+          </div>
     </div>
 
 
     
     <div class="new-page"></div>
+    <div class="card">
+      <div style="width: 25%; text-align: center">
+        <p><i class="fa fa-circle" style="color: #0080ff"></i> Spend</p>
+        <h3>$ 20,127</h3>
+        <p>
+          <i class="fa fa-caret-down" style="color: red; font-size: 20px">
+            4%</i
+          >
+          VS Prev. 7 Days
+        </p>
+      </div>
+      <hr class="vertical" />
+      </div>
     <div>
     {% for i in img %}
     <div style="padding-left: 100px;">

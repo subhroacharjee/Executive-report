@@ -41,7 +41,7 @@ hr.vertical {
 
 #customers td, #customers th {
   border: 0px solid #ddd;
-  padding: 8px;
+  padding: 12px;
 }
 #customers tr
 {
@@ -49,10 +49,10 @@ hr.vertical {
 }
 
 #customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: left;
-  background-color:#ededed;;
+  background-color:#EEF5FA;
   color: rgb(137, 131, 131);
 }
 
@@ -99,7 +99,7 @@ hr.vertical {
   }
 
   .tags{
-    border-radius: 20%;
+    border-radius: 15%;
     width: max-content;
     height: max-content;
     display: inline-block;
@@ -108,3 +108,17 @@ hr.vertical {
     margin: 10px;
     border: 1px solid rgb(224, 217, 217);
   }
+
+  .indexpagetop{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+    background: #0099ff;
+    border-bottom-left-radius: 1000px 300px;
+    border-bottom-right-radius: 1000px 400px;
+  }
+
+  .headerimg{
+    width: 180px;
+    height: 65px;}

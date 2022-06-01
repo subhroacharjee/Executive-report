@@ -1,5 +1,6 @@
 import json
-from flask import Flask, make_response, render_template
+from locale import YESEXPR
+from flask import Flask, jsonify, make_response, render_template
 import pdfkit
 import datetime
 from quickchart import QuickChart, QuickChartFunction
@@ -24,19 +25,21 @@ def index():
 
     p_data,label=process_data(data)
 
+    date=index_date(metrics['data']['date_range'])
+    print(date)
     img_list=[]
     for i in p_data:
         img_list.append(chartjs(p_data[i],label['label'],i))
 
-    rendered = render_template('index.html',img=img_list,top_creative=top_creative)
+    rendered = render_template('index.html',index_date=date,img=img_list,top_creative=top_creative)
     
     options = {
         
     'page-size': 'A4',
-    'margin-right': '0.25in',
-    'margin-bottom': '0.25in',
-    'margin-left': '0.30in',
-    'margin-top':'0.25in',
+    'margin-right': '0.20in',
+    'margin-bottom': '0.20in',
+    'margin-left': '0.20in',
+    'margin-top':'0.20in',
     }
 
 
@@ -77,8 +80,8 @@ def chartjs(data,label,key):
     qc.height = 480
     qc.device_pixel_ratio = 3.0
     qc.version=3
-    #qc.scheme='http'
-    #qc.host='localhost:3400'
+    qc.scheme='http'
+    qc.host='localhost:3400'
     
     qc.config = {
          'type': 'line', 
@@ -92,7 +95,7 @@ def chartjs(data,label,key):
                   'data': data, 
                   'fill': True, 
                   'backgroundColor':QuickChartFunction("getGradientFillHelper('vertical', ['rgba(63, 100, 249, 0.2)', 'rgba(255, 255, 255, 0.2)'])"),
-                  'borderWidth':1,
+                  'borderWidth':2,
                   'pointRadius':2}, ],}, 
                   'options': { 'scales': {'x': {'grid': {'display': False}}}, 'plugins': { 'legend': {'position': 'top','align': 'start','labels': { 'boxWidth': 0,'font': {'size': 17} }, } 
                   } }}
@@ -112,6 +115,19 @@ def date_time(date):
     cr_date = cr_date.strftime("%d %b")
     return cr_date
 
+def index_date(date):
+    start_date = datetime.datetime.strptime(date['start_date'], '%Y-%m-%d')
+    start_date = start_date.strftime("%d %B")
+    end_date = datetime.datetime.strptime(date['end_date'], '%Y-%m-%d')
+    end_date = end_date.strftime("%d %B")
+    year= datetime.datetime.strptime(date['start_date'], '%Y-%m-%d')
+    year = year.strftime("%Y")
+
+    d=start_date+" - "+end_date
+
+    final={'day':d,'year':year}
+
+    return final
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
