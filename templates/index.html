@@ -320,7 +320,7 @@
                 </div>
 
               </div>
-              <div class="flex executive_metrics_container">
+              <div class="flex executive_metrics_container" >
                 <div class="executive_metric_card">
                   <div class="color-box" style="--color:#2EADDF"></div>
                   <div class="executive_metric">
@@ -360,6 +360,9 @@
           </tr>
         </thead>
         <tbody>
+
+          {%if final_data['phase1']['top_creative']['data']['top_performing_creatives'] | length <= 3 %}
+
           {% for i in final_data['phase1']['top_creative']['data']['top_performing_creatives']%}
           <tr>
             <td class="name">
@@ -379,7 +382,37 @@
               {%endif%}
             </td>
           </tr>
+
           {% endfor %}
+
+          {%else%}
+
+          {% for i in range(3) %}
+          <tr>
+            <td class="name">
+              <img src={{final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['image_url']}}>{{final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['asset_name']}}
+            </td>
+            <td>#{{final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['advertiser_priority']}}</td>
+            <td>${{'%0.2f'|format(final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['spend']|float)}}</td>
+            <td>${{'%0.2f'|format(final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['cpi']|float)}}</td>
+            <td>${{'%0.2f'|format(final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['cpa']|float)}}</td>
+            <td>${{'%0.2f'|format(final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['roas_d7']|float)}}</td>
+            <td>${{'%0.2f'|format(final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['composite_metric']|float)}}</td>
+            <td>${{'%0.2f'|format(final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['cpup']|float)}}</td>
+            <td> {% if final_data['phase1']['top_creative']['data']['top_performing_creatives'][i]['is_active']%}
+              <p style="color: green;">Active</p>
+              {% else %}
+              <p slyle="color:red">Inactive</p>
+              {%endif%}
+            </td>
+          </tr>
+
+         
+          {% endfor %}
+
+
+          {%endif%}
+          
         </tbody>
       </table>
     </section>
@@ -447,7 +480,7 @@
                     <div class="color-box"  style="--color:#EB9016"></div>
                     <div class="executive_metric">
                       <h3>IMP AVG</h3>
-                      <h4>{{final_data['phase2']['metrics']['data']['performance_metrics']['ipm']['value']}}%</h4>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['ipm']['value']|float)}}%</h4>
                       <p>
                         {% if final_data['phase2']['metrics']['data']['performance_metrics']['ipm']['status']=='ABOVE'%}
                         <span class="above">
@@ -470,23 +503,23 @@
                   <div class="executive_metric_card">
                     <div class="color-box"  style="--color:#1E7BF4"></div>
                     <div class="executive_metric">
-                      <h3>CPI AVG</h3>
-                      <h4>${{final_data['phase2']['metrics']['data']['performance_metrics']['cpi']['value']}}</h4>
+                      <h3>ROAS D1 AVG</h3>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['d0_roas']['value']|float)}}</h4>
                       <p>
-                        {% if final_data['phase2']['metrics']['data']['performance_metrics']['cpi']['status']=='ABOVE'%}
+                        {% if final_data['phase2']['metrics']['data']['performance_metrics']['d0_roas']['status']=='ABOVE'%}
                         <span class="above">
                           <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
-                          {{ final_data['phase2']['metrics']['data']['performance_metrics']['cpi']['inflation_percent']}}%</span>
+                          {{ final_data['phase2']['metrics']['data']['performance_metrics']['d0_roas']['inflation_percent']}}%</span>
   
-                          {% elif final_data['phase2']['metrics']['data']['performance_metrics']['cpi']['status']=='BELOW' %}
+                          {% elif final_data['phase2']['metrics']['data']['performance_metrics']['d0_roas']['status']=='BELOW' %}
                           <span class="below">
                             <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
-                            {{ final_data['phase2']['metrics']['data']['performance_metrics']['cpi']['inflation_percent']}}%</span>
+                            {{ final_data['phase2']['metrics']['data']['performance_metrics']['d0_roas']['inflation_percent']}}%</span>
                             
                             {%else%}
                             <span class="same">
                               <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
-                              {{final_data['phase2']['metrics']['data']['performance_metrics']['cpi']['inflation_percent']}}%</span>
+                              {{final_data['phase2']['metrics']['data']['performance_metrics']['d0_roas']['inflation_percent']}}%</span>
   
                         {%endif%}vs Prev.{{final_data['phase2']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
                     </div>
@@ -494,23 +527,23 @@
                   <div class="executive_metric_card">
                     <div class="color-box"  style="--color:#CD15EB"></div>
                     <div class="executive_metric">
-                      <h3>CPM AVG</h3>
-                      <h4>${{final_data['phase2']['metrics']['data']['performance_metrics']['cpm']['value']}}</h4>
+                      <h3>ROAS D7 AVG</h3>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['d7_roas']['value']|float)}}</h4>
                       <p>
-                        {% if final_data['phase2']['metrics']['data']['performance_metrics']['cpm']['status']=='ABOVE'%}
+                        {% if final_data['phase2']['metrics']['data']['performance_metrics']['d7_roas']['status']=='ABOVE'%}
                         <span class="above">
                           <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
-                          {{ final_data['phase2']['metrics']['data']['performance_metrics']['cpm']['inflation_percent']}}%</span>
+                          {{ final_data['phase2']['metrics']['data']['performance_metrics']['d7_roas']['inflation_percent']}}%</span>
   
-                          {% elif final_data['phase2']['metrics']['data']['performance_metrics']['cpm']['status']=='BELOW'%}
+                          {% elif final_data['phase2']['metrics']['data']['performance_metrics']['d7_roas']['status']=='BELOW'%}
                           <span class="below">
                             <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
-                            {{ final_data['phase2']['metrics']['data']['performance_metrics']['cpm']['inflation_percent']}}%</span>
+                            {{ final_data['phase2']['metrics']['data']['performance_metrics']['d7_roas']['inflation_percent']}}%</span>
                             
                             {%else%}
                             <span class="same">
                               <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
-                              {{ final_data['phase2']['metrics']['data']['performance_metrics']['cpm']['inflation_percent']}}%</span>
+                              {{ final_data['phase2']['metrics']['data']['performance_metrics']['d7_roas']['inflation_percent']}}%</span>
   
                         {%endif%}vs Prev.{{final_data['phase2']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
                     </div>
@@ -521,7 +554,7 @@
                     <div class="color-box"  style="--color:#159DEB"></div>
                     <div class="executive_metric">
                       <h3>CPA</h3>
-                      <h4>{{final_data['phase2']['metrics']['data']['performance_metrics']['cpa']['value']}}</h4>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['cpa']['value']|float)}}</h4>
                       <p>
                         {% if final_data['phase2']['metrics']['data']['performance_metrics']['cpa']['status']=='ABOVE'%}
                         <span class="above">
@@ -545,7 +578,7 @@
                     <div class="color-box"  style="--color:#C321F2"></div>
                     <div class="executive_metric">
                       <h3>CTR</h3>
-                      <h4>{{final_data['phase2']['metrics']['data']['performance_metrics']['ctr']['value']}}</h4>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['ctr']['value']|float)}}</h4>
                       <p>
                         {% if final_data['phase2']['metrics']['data']['performance_metrics']['ctr']['status']=='ABOVE'%}
                         <span class="above">
@@ -569,7 +602,7 @@
                     <div class="color-box"  style="--color:#F45112"></div>
                     <div class="executive_metric">
                       <h3>CTI</h3>
-                      <h4>{{final_data['phase2']['metrics']['data']['performance_metrics']['cti']['value']}}</h4>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['cti']['value']|float)}}</h4>
                       <p>
                         {% if final_data['phase2']['metrics']['data']['performance_metrics']['cti']['status']=='ABOVE'%}
                         <span class="above">
@@ -593,7 +626,7 @@
                     <div class="color-box"  style="--color:#F3100A"></div>
                     <div class="executive_metric">
                       <h3>CPUP</h3>
-                      <h4>{{final_data['phase2']['metrics']['data']['performance_metrics']['cpup']['value']}}</h4>
+                      <h4>{{'%0.2f'|format(final_data['phase2']['metrics']['data']['performance_metrics']['cpup']['value']|float)}}</h4>
                       <p>
                         {% if final_data['phase2']['metrics']['data']['performance_metrics']['cpup']['status']=='ABOVE'%}
                         <span class="above">
@@ -729,6 +762,8 @@
             </tr>
           </thead>
           <tbody>
+            {%if final_data['phase2']['top_creative']['data']['top_performing_creatives'] | length <= 3 %}
+
             {% for i in final_data['phase2']['top_creative']['data']['top_performing_creatives']%}
             <tr>
               <td class="name">
@@ -748,7 +783,36 @@
                 {%endif%}
               </td>
             </tr>
+  
             {% endfor %}
+  
+            {%else%}
+  
+            {% for i in range(3) %}
+            <tr>
+              <td class="name">
+                <img src={{final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['image_url']}}>{{final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['asset_name']}}
+              </td>
+              <td>#{{final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['advertiser_priority']}}</td>
+              <td>${{'%0.2f'|format(final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['spend']|float)}}</td>
+              <td>${{'%0.2f'|format(final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['cpi']|float)}}</td>
+              <td>${{'%0.2f'|format(final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['cpa']|float)}}</td>
+              <td>${{'%0.2f'|format(final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['roas_d7']|float)}}</td>
+              <td>${{'%0.2f'|format(final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['composite_metric']|float)}}</td>
+              <td>${{'%0.2f'|format(final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['cpup']|float)}}</td>
+              <td> {% if final_data['phase2']['top_creative']['data']['top_performing_creatives'][i]['is_active']%}
+                <p style="color: green;">Active</p>
+                {% else %}
+                <p slyle="color:red">Inactive</p>
+                {%endif%}
+              </td>
+            </tr>
+  
+           
+            {% endfor %}
+  
+  
+            {%endif%}
           </tbody>
         </table>
       </section>
