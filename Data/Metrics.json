@@ -3,11 +3,13 @@
     "data": {
       "date_range": {
         "start_date": "2022-05-01",
-        "end_date": "2022-05-30"
+        "end_date": "2022-05-30",
+        "days_count": 30
       },
       "compared_date_range": {
         "start_date": "2022-04-01",
-        "end_date": "2022-04-30"
+        "end_date": "2022-04-30",
+        "days_count": 30
       },
       "inventory": 300,
       "performance_metrics": {

@@ -1,66 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<style>
-    .reportGraph {width:900px}
-</style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Testing Executive Report</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  
 
-<div class="reportGraph"><canvas id="myChart"></canvas></div>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static',filename='styles/style.css',_external=True) }}"
+  />
+  </head>
+  <body>
+    <div style="height: 1600px">
+      <div class="indexpagetop">
+        <div style="padding:50px;">
+          <img src="{{ url_for('static',filename='logo/blkbox-black-logo.png',_external=True) }}" class="headerimg">
+        </div>
+      </div>
+          <div style="padding-left: 100px;padding-top: 50px;">
+            <div style="font-weight: bold;font-size: 100px;">Creative<br>
+            Testing</div>
+            <div style="font-weight: bold;font-size: 100px;color: #0099ff;">Executive 
+            <br>Report</div>
+          </div>
+          <div style="padding-left: 100px;padding-top: 100px;font-size:30px;">
+            <h1 style="color: #707B7C;">{{final_data['index_date']['day']}} ,{{final_data['index_date']['year']}}</h1>
+          </div>
+    </div>
 
-<script type="text/javascript">
-// wkhtmltopdf 0.12.5 crash fix.
-// https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3242#issuecomment-518099192
-'use strict';
-(function(setLineDash) {
-    CanvasRenderingContext2D.prototype.setLineDash = function() {
-        if(!arguments[0].length){
-            arguments[0] = [1,0];
-        }
-        // Now, call the original method
-        return setLineDash.apply(this, arguments);
-    };
-})(CanvasRenderingContext2D.prototype.setLineDash);
-Function.prototype.bind = Function.prototype.bind || function (thisp) {
-    var fn = this;
-    return function () {
-        return fn.apply(thisp, arguments);
-    };
-};
 
-function drawGraphs() {
-    const labels = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-      ];
+    <div class="new-page"></div>
     
-      const data = {
-        labels: labels,
-        datasets: [{
-          label: 'My First dataset',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-      };
-    
-      const config = {
-        type: 'line',
-        data: data,
-        options: {animation: false,}
-      };
-      const myChart = new Chart(document.getElementById('myChart'),config);
+    <div class="layout">
+      <header>
+        <div class="container">
+          <h2>Phase 1</h2>
+        </div>
+      </header>
+        <div class="container">
 
-    }
-window.onload = function() {
-    drawGraphs();
-};
-</script>
-</body>
+          <!-- Performance Metrics -->
+          <section class="executive_reports_metrics">
+            <div class="flex justify-content-between flex-wrap executive_metrics_layout">
+              <div class="flex executive_metrics_container">
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#0080ff"></div>
+                  <div class="executive_metric">
+                    <h3>Spend</h3>
+                    <h4>${{final_data['phase1']['metrics']['data']['performance_metrics']['spend']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['spend']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['spend']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['spend']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['spend']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['spend']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev. {{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#EB9016"></div>
+                  <div class="executive_metric">
+                    <h3>IMP AVG</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['performance_metrics']['ipm']['value']}}%</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['ipm']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['ipm']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['ipm']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['ipm']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['ipm']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev. {{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#1E7BF4"></div>
+                  <div class="executive_metric">
+                    <h3>CPI AVG</h3>
+                    <h4>${{final_data['phase1']['metrics']['data']['performance_metrics']['cpi']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['cpi']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpi']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['cpi']['status']=='BELOW' %}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpi']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{final_data['phase1']['metrics']['data']['performance_metrics']['cpi']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#CD15EB"></div>
+                  <div class="executive_metric">
+                    <h3>CPM AVG</h3>
+                    <h4>${{final_data['phase1']['metrics']['data']['performance_metrics']['cpm']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['cpm']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpm']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['cpm']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpm']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpm']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex executive_metrics_container">
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#159DEB"></div>
+                  <div class="executive_metric">
+                    <h3>CPA</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['performance_metrics']['cpa']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['cpa']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpa']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['cpa']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpa']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpa']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#C321F2"></div>
+                  <div class="executive_metric">
+                    <h3>CTR</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['performance_metrics']['ctr']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['ctr']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['ctr']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['ctr']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['ctr']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['ctr']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#F45112"></div>
+                  <div class="executive_metric">
+                    <h3>CTI</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['performance_metrics']['cti']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['cti']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['cti']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['cti']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['cti']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['cti']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#F3100A"></div>
+                  <div class="executive_metric">
+                    <h3>CPUP</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['performance_metrics']['cpup']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['performance_metrics']['cpup']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpup']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['performance_metrics']['cpup']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpup']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['performance_metrics']['cpup']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex executive_metrics_container">
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#2FB75F"></div>
+                  <div class="executive_metric">
+                    <h3>Creatives Tested</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['creative_metrics']['tested_creatives']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['creative_metrics']['tested_creatives']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['creative_metrics']['tested_creatives']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['creative_metrics']['tested_creatives']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['creative_metrics']['tested_creatives']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['creative_metrics']['tested_creatives']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#C8D7CD"></div>
+                  <div class="executive_metric">
+                    <h3>Above Threshold</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['creative_metrics']['above_threshold_creatives']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['creative_metrics']['above_threshold_creatives']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['creative_metrics']['above_threshold_creatives']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+                <div class="executive_metric_card">
+                  <div class="color-box"  style="--color:#C8D7CD"></div>
+                  <div class="executive_metric">
+                    <h3>Below Threshold</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['creative_metrics']['below_threshold_creatives']['value']}}</h4>
+                    <p>
+                      {% if final_data['phase1']['metrics']['data']['creative_metrics']['below_threshold_creatives']['status']=='ABOVE'%}
+                      <span class="above">
+                        <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                        {{ final_data['phase1']['metrics']['data']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}%</span>
+
+                        {% elif final_data['phase1']['metrics']['data']['creative_metrics']['below_threshold_creatives']['status']=='BELOW'%}
+                        <span class="below">
+                          <img src="{{ url_for('static',filename='logo/below.svg',_external=True) }}" />
+                          {{ final_data['phase1']['metrics']['data']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}%</span>
+                          
+                          {%else%}
+                          <span class="same">
+                            <img src="{{ url_for('static',filename='logo/above.svg',_external=True) }}" />
+                            {{ final_data['phase1']['metrics']['data']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}%</span>
+
+                      {%endif%}vs Prev.{{final_data['phase1']['metrics']['data']['compared_date_range']['days_count']}} Days</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="flex executive_metrics_container">
+                <div class="executive_metric_card">
+                  <div class="color-box" style="--color:#2EADDF"></div>
+                  <div class="executive_metric">
+                    <h3> Inventory</h3>
+                    <h4>{{final_data['phase1']['metrics']['data']['inventory']}}</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    </div>
+
+
+          <section class="executive_reports_metrics">
+            <div class="win_rate">
+              <h3>Win Rate</h3>
+              <div class="guage-chart"></div>
+            </div>  
+          </section>
+       
+
+  
+
+
+          <!-- Charts -->
+          <section class="graphs">
+            {% for i in final_data['phase1']['charts'] %}
+            <div class="graph_card">
+              <img src="{{i}}" width="850px";height="700px">
+            </div>
+            {% endfor %}
+          </section>
+      
+
+          <!-- TopPerforming Creatives -->
+          <section class="top_performing_creatives">
+            <h3>Top performing creatives</h3>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Rank</td>
+                  <td>Spend</td>
+                  <td>CPI</td>
+                  <td>CPA</td>
+                  <td>ROAS [D7]</td>
+                  <td>Composite</td>
+                  <td>CPUP</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in final_data['phase1']['top_creative']['data']['top_performing_creatives']%}
+                <tr>
+                  <td class="name">
+                    <img src={{i['image_url']}}>
+                  </td>
+                  <td>#{{i['advertiser_priority']}}</td>
+                  <td>${{i['spend']}}</td>
+                  <td>${{i['cpi']}}</td>
+                  <td>${{i['cpa']}}</td>
+                  <td>${{i['roas_d7']}}</td>
+                  <td>${{i['composite_metric']}}</td>
+                  <td>${{i['cpup']}}</td>
+                  <td> {% if i['is_active']%}
+                    <p style="color: green;">Active</p>
+                    {% else %}
+                    <p slyle="color:red">Inactive</p>
+                    {%endif%}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </section>
+          
+
+          <!-- Tags And Color -->
+
+          <section class="flex justify-content-between">
+            <div class="colors">
+              <h3>Colors</h3>
+              <div class="p-4 flex flex-wrap">
+                <div class="color" style="background-color: red;"></div>
+                <div class="color" style="background-color: blue;"></div>
+              </div>
+            </div>
+            <div class="tags">
+              <h3>Tags</h3>
+              <div class="p-4 flex flex-wrap">
+                <div class="tag">Humans</div>
+                <div class="tag">Persons</div>
+              </div>
+            </div>
+          </section>
+  </body>
 </html>

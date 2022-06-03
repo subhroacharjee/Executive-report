@@ -1,0 +1,3944 @@
+{
+  "status": "success",
+  "data": {
+    "date_range": {
+      "start_date": "2022-05-01",
+      "end_date": "2022-05-31",
+      "days_count": 31
+    },
+    "top_performing_creatives": [
+      {
+        "asset_id": "470833947841490",
+        "asset_name": "HoV_DragonoftheEasternOcean_V37753_15_AndroidiOSPC_English_Portrait&IMG=T4P.mp4",
+        "composite_metric": 1.31125395199574,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/272977767_445442150596783_4296075893215983086_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_DragonoftheEasternOcean_V37753_15_AndroidiOSPC_English_Portrait%26IMG%3DT4P.mp4",
+        "global_performance": 0.0524475037130127,
+        "spend": 2260,
+        "roas_d0": 0.17912389380531,
+        "roas_d7": 0.465236725663717,
+        "cpup": 141.25,
+        "d0": 404.82,
+        "d7": 1051.435,
+        "cpi": 7.95774647887324,
+        "cpc": 15.0666666666667,
+        "arpu": 65.7146875,
+        "ipm": 1.59830714510828,
+        "unique_purchases": 404.82,
+        "cpm": 12.7189230561434,
+        "cpa": 0,
+        "ctr": 0.0844176309036063,
+        "cvr": 0.528169014084507,
+        "cti": 1.89333333333333,
+        "installs": 284,
+        "impressions": 177688,
+        "clicks": 150,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1089163744983283",
+        "asset_name": "HoV_MissKittyGold_V39739_15_AndroidiOSPC_English_Square&IMG=UNV.mp4",
+        "composite_metric": 0.17394910368603,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/278131218_665837128021239_4073142873481384065_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MissKittyGold_V39739_15_AndroidiOSPC_English_Square%26IMG%3DUNV.mp4",
+        "global_performance": 0.0164691121688742,
+        "spend": 2344,
+        "roas_d0": 0,
+        "roas_d7": 0.15358361774744,
+        "cpup": 586,
+        "d0": 0,
+        "d7": 360,
+        "cpi": 34.4705882352941,
+        "cpc": 54.5116279069767,
+        "arpu": 90,
+        "ipm": 0.670823139452293,
+        "unique_purchases": 0,
+        "cpm": 23.1236682187673,
+        "cpa": 0,
+        "ctr": 0.0424196985241891,
+        "cvr": 0.632352941176471,
+        "cti": 1.58139534883721,
+        "installs": 68,
+        "impressions": 101368,
+        "clicks": 43,
+        "ppm": 0
+      },
+      {
+        "asset_id": "339659594625281",
+        "asset_name": "ALL_HoV_MissKittyBooGold_V35791_10_AndroidiOSPC_English_Portrait&IMG=RM7.mp4",
+        "composite_metric": 0.129938556493561,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/245565832_339660154625225_8704904234407002800_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_MissKittyBooGold_V35791_10_AndroidiOSPC_English_Portrait%26IMG%3DRM7.mp4",
+        "global_performance": 0.0321801134572959,
+        "spend": 582,
+        "roas_d0": 0.129465635738832,
+        "roas_d7": 0.132302405498282,
+        "cpup": 291,
+        "d0": 75.349,
+        "d7": 77,
+        "cpi": 20.0689655172414,
+        "cpc": 3.12903225806452,
+        "arpu": 38.5,
+        "ipm": 0.545974847503577,
+        "unique_purchases": 75.349,
+        "cpm": 10.9571503878304,
+        "cpa": 0,
+        "ctr": 0.350176971157467,
+        "cvr": 6.41379310344828,
+        "cti": 0.155913978494624,
+        "installs": 29,
+        "impressions": 53116,
+        "clicks": 186,
+        "ppm": 0
+      },
+      {
+        "asset_id": "980379306158901",
+        "asset_name": "HoV_CashExpressLuxuryLineBuffalo_V33506_15_English_Landscape&IMG=PUQ.mp4",
+        "composite_metric": 1.15051120414141,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/261171820_980379649492200_5805006302497862952_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_CashExpressLuxuryLineBuffalo_V33506_15_English_Landscape%26IMG%3DPUQ.mp4",
+        "global_performance": 0.0477179879420499,
+        "spend": 2668,
+        "roas_d0": 0.102620689655172,
+        "roas_d7": 0.103448275862069,
+        "cpup": 667,
+        "d0": 273.792,
+        "d7": 276,
+        "cpi": 11.1166666666667,
+        "cpc": 11.8577777777778,
+        "arpu": 69,
+        "ipm": 0.936666487504095,
+        "unique_purchases": 273.792,
+        "cpm": 10.4126091194205,
+        "cpa": 0,
+        "ctr": 0.0878124832035089,
+        "cvr": 0.9375,
+        "cti": 1.06666666666667,
+        "installs": 240,
+        "impressions": 256227.807017544,
+        "clicks": 225,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1408912889559337",
+        "asset_name": "HoV_SunMoonStars_V39446_15_AndroidiOSPC_English_Portrait&IMG=UFQ.mp4",
+        "composite_metric": 0.088103639247635,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/276100347_770920543871404_1265630515455664375_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_SunMoonStars_V39446_15_AndroidiOSPC_English_Portrait%26IMG%3DUFQ.mp4",
+        "global_performance": 0.0175012295237014,
+        "spend": 735,
+        "roas_d0": 0.0201170068027211,
+        "roas_d7": 0.0761904761904762,
+        "cpup": 245,
+        "d0": 14.786,
+        "d7": 56,
+        "cpi": 25.3448275862069,
+        "cpc": 7.35,
+        "arpu": 18.6666666666667,
+        "ipm": 0.773189004719119,
+        "unique_purchases": 14.786,
+        "cpm": 19.596342016157,
+        "cpa": 0,
+        "ctr": 0.266616898179007,
+        "cvr": 3.44827586206897,
+        "cti": 0.29,
+        "installs": 29,
+        "impressions": 37507,
+        "clicks": 100,
+        "ppm": 0
+      },
+      {
+        "asset_id": "403743574507866",
+        "asset_name": "AU_HoV_PhoenixBlast_V34399_15_AndroidiOSPC_English_Portrait&IMG=QJJ.mp4",
+        "composite_metric": 1.14182406394215,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/240133639_403744191174471_8326592802407395154_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/AU_HoV_PhoenixBlast_V34399_15_AndroidiOSPC_English_Portrait%26IMG%3DQJJ.mp4",
+        "global_performance": 0.0196428571428571,
+        "spend": 560,
+        "roas_d0": 0.0196071428571429,
+        "roas_d7": 0.0196428571428571,
+        "cpup": 186.666666666667,
+        "d0": 10.98,
+        "d7": 11,
+        "cpi": 23.3333333333333,
+        "cpc": 7,
+        "arpu": 3.66666666666667,
+        "ipm": 1.14182406394215,
+        "unique_purchases": 10.98,
+        "cpm": 26.6425614919834,
+        "cpa": 0,
+        "ctr": 0.380608021314049,
+        "cvr": 3.33333333333333,
+        "cti": 0.3,
+        "installs": 24,
+        "impressions": 21019,
+        "clicks": 80,
+        "ppm": 0
+      },
+      {
+        "asset_id": "795923871255341",
+        "asset_name": "HoV_FuDaiLianLianDragon_V37368_16_AndroidiOSPC_English_Portrait&IMG=SU0.mp4",
+        "composite_metric": 1.08527440482031,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/272277920_795924014588660_2426110088869684303_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_FuDaiLianLianDragon_V37368_16_AndroidiOSPC_English_Portrait%26IMG%3DSU0.mp4",
+        "global_performance": 0.017853813559322,
+        "spend": 2197,
+        "roas_d0": 0,
+        "roas_d7": 0.0191784251251707,
+        "cpup": 549.25,
+        "d0": 0,
+        "d7": 42.135,
+        "cpi": 19.6160714285714,
+        "cpc": 29.2933333333333,
+        "arpu": 10.53375,
+        "ipm": 1.07890985643929,
+        "unique_purchases": 0,
+        "cpm": 21.1639728089028,
+        "cpa": 0,
+        "ctr": 0.0722484278865593,
+        "cvr": 0.669642857142857,
+        "cti": 1.49333333333333,
+        "installs": 112,
+        "impressions": 103808.487179487,
+        "clicks": 75,
+        "ppm": 0
+      },
+      {
+        "asset_id": "359437702830398",
+        "asset_name": "HoV_MissKittyWildRide_V40039_15_AndroidiOSPC_English_Portrait&IMG=UW7.mp4",
+        "composite_metric": 1.69465648827228,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/279256463_956486071715602_4405448649815125660_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MissKittyWildRide_V40039_15_AndroidiOSPC_English_Portrait%26IMG%3DUW7.mp4",
+        "global_performance": 0.0176749619798147,
+        "spend": 5477,
+        "roas_d0": 0.0180142413730144,
+        "roas_d7": 0.0180551396750046,
+        "cpup": 608.555555555556,
+        "d0": 98.664,
+        "d7": 98.888,
+        "cpi": 30.7696629213483,
+        "cpc": 51.1869158878505,
+        "arpu": 10.9875555555556,
+        "ipm": 1.25619377581656,
+        "unique_purchases": 98.664,
+        "cpm": 38.6526590457714,
+        "cpa": 0,
+        "ctr": 0.075512771917063,
+        "cvr": 0.601123595505618,
+        "cti": 1.66355140186916,
+        "installs": 178,
+        "impressions": 141697.884057971,
+        "clicks": 107,
+        "ppm": 0
+      },
+      {
+        "asset_id": "418907373097086",
+        "asset_name": "ALL_HoV_WelcometoHOV_V36250_30_AndroidiOSPC_English_Portrait&IMG=RYY.mp4",
+        "composite_metric": 0.699650174912544,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/256591170_418911866429970_2976937146974652011_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_WelcometoHOV_V36250_30_AndroidiOSPC_English_Portrait%26IMG%3DRYY.mp4",
+        "global_performance": 0.0168634064080944,
+        "spend": 593,
+        "roas_d0": 0.00366273187183811,
+        "roas_d7": 0.0168634064080944,
+        "cpup": 296.5,
+        "d0": 2.172,
+        "d7": 10,
+        "cpi": 84.7142857142857,
+        "cpc": 25.7826086956522,
+        "arpu": 5,
+        "ipm": 0.699650174912544,
+        "unique_purchases": 2.172,
+        "cpm": 59.2703648175912,
+        "cpa": 0,
+        "ctr": 0.229885057471264,
+        "cvr": 3.28571428571429,
+        "cti": 0.304347826086957,
+        "installs": 7,
+        "impressions": 10005,
+        "clicks": 23,
+        "ppm": 0
+      },
+      {
+        "asset_id": "753175212728675",
+        "asset_name": "HoV_HeartofVegasMultipleIP_V40307_15_AndroidiOSPC_English_Portrait&IMG=V3N.mp4",
+        "composite_metric": 2.61199936678803,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/279673025_529595662160084_4629698343377110525_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_HeartofVegasMultipleIP_V40307_15_AndroidiOSPC_English_Portrait%26IMG%3DV3N.mp4",
+        "global_performance": 0.00791752577319588,
+        "spend": 644,
+        "roas_d0": 0,
+        "roas_d7": 0.0108695652173913,
+        "cpup": 644,
+        "d0": 0,
+        "d7": 7,
+        "cpi": 71.5555555555556,
+        "cpc": 20.125,
+        "arpu": 7,
+        "ipm": 0.801068090787717,
+        "unique_purchases": 0,
+        "cpm": 57.3208722741433,
+        "cpa": 0,
+        "ctr": 0.284824210057855,
+        "cvr": 3.55555555555556,
+        "cti": 0.28125,
+        "installs": 9,
+        "impressions": 11235,
+        "clicks": 32,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1310156059403511",
+        "asset_name": "ALL_HoV_ReadySteadyShake_V35547_25_AndroidiOSPC_English_Landscape&IMG=RFF.mp4",
+        "composite_metric": 1.59675326835435,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/244763625_1310158066069977_1704537500663157917_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_ReadySteadyShake_V35547_25_AndroidiOSPC_English_Landscape%26IMG%3DRFF.mp4",
+        "global_performance": 0.00842524005486968,
+        "spend": 596,
+        "roas_d0": 0,
+        "roas_d7": 0.0103053691275168,
+        "cpup": 298,
+        "d0": 0,
+        "d7": 6.142,
+        "cpi": 59.6,
+        "cpc": 15.6842105263158,
+        "arpu": 3.071,
+        "ipm": 0.456808734182998,
+        "unique_purchases": 0,
+        "cpm": 27.2258005573067,
+        "cpa": 0,
+        "ctr": 0.173587318989539,
+        "cvr": 3.8,
+        "cti": 0.263157894736842,
+        "installs": 10,
+        "impressions": 21891,
+        "clicks": 38,
+        "ppm": 0
+      },
+      {
+        "asset_id": "432058921699375",
+        "asset_name": "ALL_HoV_TigersDen_V36725_15_AndroidiOSPC_English_Portrait&IMG=SC5.mp4",
+        "composite_metric": 0.54077438892494,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/186205384_432060318365902_8760575395098646419_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_TigersDen_V36725_15_AndroidiOSPC_English_Portrait%26IMG%3DSC5.mp4",
+        "global_performance": 0.00330173775671406,
+        "spend": 633,
+        "roas_d0": 0,
+        "roas_d7": 0.00990521327014218,
+        "cpup": 633,
+        "d0": 0,
+        "d7": 6.27,
+        "cpi": 63.3,
+        "cpc": 16.6578947368421,
+        "arpu": 6.27,
+        "ipm": 0.54077438892494,
+        "unique_purchases": 0,
+        "cpm": 34.2310188189487,
+        "cpa": 0,
+        "ctr": 0.205494267791477,
+        "cvr": 3.8,
+        "cti": 0.263157894736842,
+        "installs": 10,
+        "impressions": 18492,
+        "clicks": 38,
+        "ppm": 0
+      },
+      {
+        "asset_id": "359050172889483",
+        "asset_name": "HoV_MoonRace_V38642_15_AndroidiOSPC_English_Landscape&IMG=TTE.mp4",
+        "composite_metric": 0.784193714974275,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/274220871_673244987366076_4545468383921986803_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MoonRace_V38642_15_AndroidiOSPC_English_Landscape%26IMG%3DTTE.mp4",
+        "global_performance": 0.00700525394045534,
+        "spend": 571,
+        "roas_d0": 0,
+        "roas_d7": 0.00700525394045534,
+        "cpup": 571,
+        "d0": 0,
+        "d7": 4,
+        "cpi": 13.9268292682927,
+        "cpc": 2.13059701492537,
+        "arpu": 4,
+        "ipm": 0.784193714974275,
+        "unique_purchases": 0,
+        "cpm": 10.9213319817149,
+        "cpa": 0,
+        "ctr": 0.512594916129526,
+        "cvr": 6.53658536585366,
+        "cti": 0.152985074626866,
+        "installs": 41,
+        "impressions": 52283,
+        "clicks": 268,
+        "ppm": 0
+      },
+      {
+        "asset_id": "364522272325212",
+        "asset_name": "HoV_Buffalo_V40483_20_AndroidiOSPC_English_Portrait&IMG=V8J.mp4",
+        "composite_metric": 2.59170653907496,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/283689554_1032791700967937_6705900256487801353_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_Buffalo_V40483_20_AndroidiOSPC_English_Portrait%26IMG%3DV8J.mp4",
+        "global_performance": 0.0025982028241335,
+        "spend": 615,
+        "roas_d0": 0.00329105691056911,
+        "roas_d7": 0.00329105691056911,
+        "cpup": 615,
+        "d0": 2.024,
+        "d7": 2.024,
+        "cpi": 41,
+        "cpc": 18.6363636363636,
+        "arpu": 2.024,
+        "ipm": 1.14898506319418,
+        "unique_purchases": 2.024,
+        "cpm": 47.1083875909613,
+        "cpa": 0,
+        "ctr": 0.252776713902719,
+        "cvr": 2.2,
+        "cti": 0.454545454545455,
+        "installs": 15,
+        "impressions": 13055,
+        "clicks": 33,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1048029969428885",
+        "asset_name": "HoV_Buffalo_V40485_20_AndroidiOSPC_English_Portrait&IMG=V8L.mp4",
+        "composite_metric": 2.924689251767,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/283326364_643877697428872_77597917864939232_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_Buffalo_V40485_20_AndroidiOSPC_English_Portrait%26IMG%3DV8L.mp4",
+        "global_performance": 0.00191492146596859,
+        "spend": 597,
+        "roas_d0": 0.00245058626465662,
+        "roas_d7": 0.00245058626465662,
+        "cpup": 597,
+        "d0": 1.463,
+        "d7": 1.463,
+        "cpi": 99.5,
+        "cpc": 33.1666666666667,
+        "arpu": 1.463,
+        "ipm": 0.651536540340971,
+        "unique_purchases": 1.463,
+        "cpm": 64.8278857639266,
+        "cpa": 0,
+        "ctr": 0.195460962102291,
+        "cvr": 3,
+        "cti": 0.333333333333333,
+        "installs": 6,
+        "impressions": 9209,
+        "clicks": 18,
+        "ppm": 0
+      },
+      {
+        "asset_id": "405520704778293",
+        "asset_name": "HoV_Buffalo_V40484_20_AndroidiOSPC_English_Square&IMG=V8K.mp4",
+        "composite_metric": 3.44176285414481,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/282680141_345830620970487_1304270732083591060_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_Buffalo_V40484_20_AndroidiOSPC_English_Square%26IMG%3DV8K.mp4",
+        "global_performance": 0.00180733944954128,
+        "spend": 595,
+        "roas_d0": 0.00231764705882353,
+        "roas_d7": 0.00231764705882353,
+        "cpup": 595,
+        "d0": 1.379,
+        "d7": 1.379,
+        "cpi": 35,
+        "cpc": 12.3958333333333,
+        "arpu": 1.379,
+        "ipm": 1.42521797451375,
+        "unique_purchases": 1.379,
+        "cpm": 49.8826291079812,
+        "cpa": 0,
+        "ctr": 0.402414486921529,
+        "cvr": 2.82352941176471,
+        "cti": 0.354166666666667,
+        "installs": 17,
+        "impressions": 11928,
+        "clicks": 48,
+        "ppm": 0
+      },
+      {
+        "asset_id": "385535706635418",
+        "asset_name": "ALL_HoV_WickedWinningsIV_V35522_30_AndroidiOSPC_English_Landscape&IMG=REQ.mp4",
+        "composite_metric": 0.407149546028256,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/244648105_385537936635195_6959463032444129528_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_WickedWinningsIV_V35522_30_AndroidiOSPC_English_Landscape%26IMG%3DREQ.mp4",
+        "global_performance": 0.023,
+        "spend": 588,
+        "roas_d0": 0,
+        "roas_d7": 0.00170068027210884,
+        "cpup": 588,
+        "d0": 0,
+        "d7": 1,
+        "cpi": 17.8181818181818,
+        "cpc": 2.86829268292683,
+        "arpu": 1,
+        "ipm": 0.456084582959021,
+        "unique_purchases": 0,
+        "cpm": 8.12659802363347,
+        "cpa": 0,
+        "ctr": 0.283325271232119,
+        "cvr": 6.21212121212121,
+        "cti": 0.160975609756098,
+        "installs": 33,
+        "impressions": 72355,
+        "clicks": 205,
+        "ppm": 0
+      },
+      {
+        "asset_id": "4199037783535271",
+        "asset_name": "ALL_HoV_WelcometoHOV_V36249_30_AndroidiOSPC_English_Landscape&IMG=RYX.mp4",
+        "composite_metric": 0.717875089734386,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/256250385_4199053250200391_4678628640372618157_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_WelcometoHOV_V36249_30_AndroidiOSPC_English_Landscape%26IMG%3DRYX.mp4",
+        "global_performance": 0.00167224080267559,
+        "spend": 598,
+        "roas_d0": 0,
+        "roas_d7": 0.00167224080267559,
+        "cpup": 598,
+        "d0": 0,
+        "d7": 1,
+        "cpi": 74.75,
+        "cpc": 15.7368421052632,
+        "arpu": 1,
+        "ipm": 0.717875089734386,
+        "unique_purchases": 0,
+        "cpm": 53.6611629576454,
+        "cpa": 0,
+        "ctr": 0.340990667623833,
+        "cvr": 4.75,
+        "cti": 0.210526315789474,
+        "installs": 8,
+        "impressions": 11144,
+        "clicks": 38,
+        "ppm": 0
+      },
+      {
+        "asset_id": "597133504888064",
+        "asset_name": "ALL_HoV_WelcometoHOV_V36251_30_AndroidiOSPC_English_Portrait&IMG=RYZ.mp4",
+        "composite_metric": 1.16274387420219,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/255766630_597137994887615_4389723741007905587_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_WelcometoHOV_V36251_30_AndroidiOSPC_English_Portrait%26IMG%3DRYZ.mp4",
+        "global_performance": 0.000896458987001345,
+        "spend": 2231,
+        "roas_d0": 0.000640968175705961,
+        "roas_d7": 0.000896458987001345,
+        "cpup": 1115.5,
+        "d0": 1.43,
+        "d7": 2,
+        "cpi": 101.409090909091,
+        "cpc": 51.8837209302326,
+        "arpu": 1,
+        "ipm": 1.16274387420219,
+        "unique_purchases": 1.43,
+        "cpm": 117.912799242958,
+        "cpa": 0,
+        "ctr": 0.227263575412246,
+        "cvr": 1.95454545454545,
+        "cti": 0.511627906976744,
+        "installs": 22,
+        "impressions": 18920.7619047619,
+        "clicks": 43,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1010559466538590",
+        "asset_name": "HoV_WickedWinningsII_V38812_15_AndroidiOSPC_English_Landscape&IMG=TY4.mp4",
+        "composite_metric": 0.339571385451253,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/274658235_635637687700039_8420978916726457085_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_WickedWinningsII_V38812_15_AndroidiOSPC_English_Landscape%26IMG%3DTY4.mp4",
+        "global_performance": 0.023,
+        "spend": 1828,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 203.111111111111,
+        "cpc": 25.7464788732394,
+        "arpu": 0,
+        "ipm": 0.341219290263876,
+        "unique_purchases": 0,
+        "cpm": 69.3054291780406,
+        "cpa": 0,
+        "ctr": 0.269184106763725,
+        "cvr": 7.88888888888889,
+        "cti": 0.126760563380282,
+        "installs": 9,
+        "impressions": 26376,
+        "clicks": 71,
+        "ppm": 0
+      },
+      {
+        "asset_id": "457357922619820",
+        "asset_name": "AU_HoV_PhoenixBlast_V34397_10_AndroidiOSPC_English_Portrait&IMG=QJH.mp4",
+        "composite_metric": 1.08255569749064,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/239901177_457358429286436_2055145792287656936_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/AU_HoV_PhoenixBlast_V34397_10_AndroidiOSPC_English_Portrait%26IMG%3DQJH.mp4",
+        "global_performance": 0.023,
+        "spend": 960,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 120,
+        "cpc": 35.5555555555556,
+        "arpu": 0,
+        "ipm": 0.206659605796802,
+        "unique_purchases": 0,
+        "cpm": 24.7991526956162,
+        "cpa": 0,
+        "ctr": 0.0697476169564207,
+        "cvr": 3.375,
+        "cti": 0.296296296296296,
+        "installs": 8,
+        "impressions": 38711,
+        "clicks": 27,
+        "ppm": 0
+      },
+      {
+        "asset_id": "381897103603654",
+        "asset_name": "ALL_HoV_ReadySteadyShake_V35548_25_AndroidiOSPC_English_Portrait&IMG=RFG.mp4",
+        "composite_metric": 0.300120048019208,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/244503378_381899703603394_1180798057494701536_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_ReadySteadyShake_V35548_25_AndroidiOSPC_English_Portrait%26IMG%3DRFG.mp4",
+        "global_performance": 0.023,
+        "spend": 766,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 76.6,
+        "cpc": 20.1578947368421,
+        "arpu": 0,
+        "ipm": 0.300120048019208,
+        "unique_purchases": 0,
+        "cpm": 22.9891956782713,
+        "cpa": 0,
+        "ctr": 0.114045618247299,
+        "cvr": 3.8,
+        "cti": 0.263157894736842,
+        "installs": 10,
+        "impressions": 33320,
+        "clicks": 38,
+        "ppm": 0
+      },
+      {
+        "asset_id": "252706316581205",
+        "asset_name": "AU_HoV_PhoenixBlast_V34395_15_AndroidiOSPC_English_Portrait&IMG=QJF.mp4",
+        "composite_metric": 0.865145452579215,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/240366174_252706819914488_2930067281969955059_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/AU_HoV_PhoenixBlast_V34395_15_AndroidiOSPC_English_Portrait%26IMG%3DQJF.mp4",
+        "global_performance": 0.023,
+        "spend": 632,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 79,
+        "cpc": 37.1764705882353,
+        "arpu": 0,
+        "ipm": 0.865145452579215,
+        "unique_purchases": 0,
+        "cpm": 68.346490753758,
+        "cpa": 0,
+        "ctr": 0.183843408673083,
+        "cvr": 2.125,
+        "cti": 0.470588235294118,
+        "installs": 8,
+        "impressions": 9247,
+        "clicks": 17,
+        "ppm": 0
+      },
+      {
+        "asset_id": "146568847640151",
+        "asset_name": "AU_HoV_BoomPower_V30891_15_English_Portrait&IMG=NU3.mp4",
+        "composite_metric": 2.7916610383178,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/239678956_146569407640095_8537584187004080670_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/AU_HoV_BoomPower_V30891_15_English_Portrait%26IMG%3DNU3.mp4",
+        "global_performance": 0.023,
+        "spend": 631,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 63.1,
+        "cpc": 35.0555555555556,
+        "arpu": 0,
+        "ipm": 0.929454410261177,
+        "unique_purchases": 0,
+        "cpm": 58.6485732874802,
+        "cpa": 0,
+        "ctr": 0.167301793847012,
+        "cvr": 1.8,
+        "cti": 0.555555555555556,
+        "installs": 10,
+        "impressions": 10759,
+        "clicks": 18,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1446925939064043",
+        "asset_name": "HoV_Buffalo_V40486_20_S1280_AndroidiOSPC_English_Portrait&IMG=V8M.mp4",
+        "composite_metric": 3.01692099164881,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/282558624_5146959495389614_4549590500841543226_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_Buffalo_V40486_20_S1280_AndroidiOSPC_English_Portrait%26IMG%3DV8M.mp4",
+        "global_performance": 0.023,
+        "spend": 603,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 60.3,
+        "cpc": 26.2173913043478,
+        "arpu": 0,
+        "ipm": 1.02827763496144,
+        "unique_purchases": 0,
+        "cpm": 62.0051413881748,
+        "cpa": 0,
+        "ctr": 0.236503856041131,
+        "cvr": 2.3,
+        "cti": 0.434782608695652,
+        "installs": 10,
+        "impressions": 9725,
+        "clicks": 23,
+        "ppm": 0
+      },
+      {
+        "asset_id": "822966741703600",
+        "asset_name": "AU_HoV_PhoenixBlast_V35816_15_AndroidiOSPC_English_Portrait&IMG=RMW.mp4",
+        "composite_metric": 2.03158791532866,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/246502755_822967175036890_6286958665614658577_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/AU_HoV_PhoenixBlast_V35816_15_AndroidiOSPC_English_Portrait%26IMG%3DRMW.mp4",
+        "global_performance": 0.023,
+        "spend": 602,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 200.666666666667,
+        "cpc": 12.5416666666667,
+        "arpu": 0,
+        "ipm": 0.35377358490566,
+        "unique_purchases": 0,
+        "cpm": 70.9905660377358,
+        "cpa": 0,
+        "ctr": 0.566037735849057,
+        "cvr": 16,
+        "cti": 0.0625,
+        "installs": 3,
+        "impressions": 8480,
+        "clicks": 48,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1170687773667210",
+        "asset_name": "HoV_MissKittyWildRide_V40041_15_AndroidiOSPC_English_Landscape&IMG=UW9.mp4",
+        "composite_metric": 0.760246043264911,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/278651930_979943552710493_781318964718501671_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MissKittyWildRide_V40041_15_AndroidiOSPC_English_Landscape%26IMG%3DUW9.mp4",
+        "global_performance": 0.023,
+        "spend": 589,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 14.725,
+        "cpc": 4.00680272108844,
+        "arpu": 0,
+        "ipm": 0.928926411164266,
+        "unique_purchases": 0,
+        "cpm": 13.6784414043938,
+        "cpa": 0,
+        "ctr": 0.341380456102868,
+        "cvr": 3.675,
+        "cti": 0.272108843537415,
+        "installs": 40,
+        "impressions": 43060.4615384615,
+        "clicks": 147,
+        "ppm": 0
+      },
+      {
+        "asset_id": "709364960477241",
+        "asset_name": "HoV_EasterEgg_V39501_15_AndroidiOSPC_English_Portrait&IMG=UH9.mp4",
+        "composite_metric": 0.430477830391735,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/277957714_465797098621513_3122992898401474079_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_EasterEgg_V39501_15_AndroidiOSPC_English_Portrait%26IMG%3DUH9.mp4",
+        "global_performance": 0.023,
+        "spend": 586,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 73.25,
+        "cpc": 16.7428571428571,
+        "arpu": 0,
+        "ipm": 0.430477830391735,
+        "unique_purchases": 0,
+        "cpm": 31.5325010761946,
+        "cpa": 0,
+        "ctr": 0.188334050796384,
+        "cvr": 4.375,
+        "cti": 0.228571428571429,
+        "installs": 8,
+        "impressions": 18584,
+        "clicks": 35,
+        "ppm": 0
+      },
+      {
+        "asset_id": "302995674690683",
+        "asset_name": "ALL_HoV_MissKittyBooGold_V35792_15_AndroidiOSPC_English_Portrait&IMG=RM8.mp4",
+        "composite_metric": 2.5386438000677,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/245956027_302996058023978_5196118575898011983_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_MissKittyBooGold_V35792_15_AndroidiOSPC_English_Portrait%26IMG%3DRM8.mp4",
+        "global_performance": 0.023,
+        "spend": 581,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 58.1,
+        "cpc": 38.7333333333333,
+        "arpu": 0,
+        "ipm": 0.861400637436472,
+        "unique_purchases": 0,
+        "cpm": 50.047377035059,
+        "cpa": 0,
+        "ctr": 0.129210095615471,
+        "cvr": 1.5,
+        "cti": 0.666666666666667,
+        "installs": 10,
+        "impressions": 11609,
+        "clicks": 15,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1134355020305795",
+        "asset_name": "ALL_HoV_MissKittyBooGold_V35794_15_AndroidiOSPC_English_Portrait&IMG=RMA.mp4",
+        "composite_metric": 2.60887015853903,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/245632350_1134355863639044_5670374464763268508_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_MissKittyBooGold_V35794_15_AndroidiOSPC_English_Portrait%26IMG%3DRMA.mp4",
+        "global_performance": 0.023,
+        "spend": 579,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 115.8,
+        "cpc": 44.5384615384615,
+        "arpu": 0,
+        "ipm": 0.552364118426867,
+        "unique_purchases": 0,
+        "cpm": 63.9637649138312,
+        "cpa": 0,
+        "ctr": 0.143614670790985,
+        "cvr": 2.6,
+        "cti": 0.384615384615385,
+        "installs": 5,
+        "impressions": 9052,
+        "clicks": 13,
+        "ppm": 0
+      },
+      {
+        "asset_id": "952357238779872",
+        "asset_name": "HoV_HeartofVegasMultipleIP_V40309_15_AndroidiOSPC_English_Portrait&IMG=V3P.mp4",
+        "composite_metric": 2.79993660520894,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/279699429_1160054158086533_6265459054181375169_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_HeartofVegasMultipleIP_V40309_15_AndroidiOSPC_English_Portrait%26IMG%3DV3P.mp4",
+        "global_performance": 0.023,
+        "spend": 579,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 28.95,
+        "cpc": 18.6774193548387,
+        "arpu": 0,
+        "ipm": 1.24766063630692,
+        "unique_purchases": 0,
+        "cpm": 36.1197754210855,
+        "cpa": 0,
+        "ctr": 0.193387398627573,
+        "cvr": 1.55,
+        "cti": 0.645161290322581,
+        "installs": 20,
+        "impressions": 16030,
+        "clicks": 31,
+        "ppm": 0
+      },
+      {
+        "asset_id": "2795897180712475",
+        "asset_name": "HoV_Buffalo_V40488_20_AndroidiOSPC_English_Square&IMG=V8O.mp4",
+        "composite_metric": 2.89867428279125,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/283471688_594497928496427_5229893045728237077_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_Buffalo_V40488_20_AndroidiOSPC_English_Square%26IMG%3DV8O.mp4",
+        "global_performance": 0.023,
+        "spend": 575,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 71.875,
+        "cpc": 15.1315789473684,
+        "arpu": 0,
+        "ipm": 0.746895714685837,
+        "unique_purchases": 0,
+        "cpm": 53.6831294930445,
+        "cpa": 0,
+        "ctr": 0.354775464475773,
+        "cvr": 4.75,
+        "cti": 0.210526315789474,
+        "installs": 8,
+        "impressions": 10711,
+        "clicks": 38,
+        "ppm": 0
+      },
+      {
+        "asset_id": "957588348265409",
+        "asset_name": "HoV_LuckyStallion_V40048_20_AndroidiOSPC_English_Portrait&IMG=UWG.mp4",
+        "composite_metric": 0.273841308961457,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/278787121_523388159412853_8574023351264073289_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_LuckyStallion_V40048_20_AndroidiOSPC_English_Portrait%26IMG%3DUWG.mp4",
+        "global_performance": 0.023,
+        "spend": 574,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 143.5,
+        "cpc": 17.3939393939394,
+        "arpu": 0,
+        "ipm": 0.273672687465791,
+        "unique_purchases": 0,
+        "cpm": 39.272030651341,
+        "cpa": 0,
+        "ctr": 0.225779967159277,
+        "cvr": 8.25,
+        "cti": 0.121212121212121,
+        "installs": 4,
+        "impressions": 14616,
+        "clicks": 33,
+        "ppm": 0
+      },
+      {
+        "asset_id": "578988836765279",
+        "asset_name": "ALL_HoV_Buffalo_V36202_15_AndroidiOSPC_English_Square&IMG=RXM.mp4",
+        "composite_metric": 0.620292423571112,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/255370986_578991730098323_3798002862965133399_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_Buffalo_V36202_15_AndroidiOSPC_English_Square%26IMG%3DRXM.mp4",
+        "global_performance": 0.023,
+        "spend": 570,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 81.4285714285714,
+        "cpc": 9.66101694915254,
+        "arpu": 0,
+        "ipm": 0.620292423571112,
+        "unique_purchases": 0,
+        "cpm": 50.509525919362,
+        "cpa": 0,
+        "ctr": 0.52281789986708,
+        "cvr": 8.42857142857143,
+        "cti": 0.11864406779661,
+        "installs": 7,
+        "impressions": 11285,
+        "clicks": 59,
+        "ppm": 0
+      },
+      {
+        "asset_id": "675145547118048",
+        "asset_name": "HoV_HeartofVegasMultipleIP_V40308_15_AndroidiOSPC_English_Portrait&IMG=V3O.mp4",
+        "composite_metric": 2.85495643983989,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/279446660_5237336049656912_9150431426652837827_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_HeartofVegasMultipleIP_V40308_15_AndroidiOSPC_English_Portrait%26IMG%3DV3O.mp4",
+        "global_performance": 0.023,
+        "spend": 568,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 142,
+        "cpc": 25.8181818181818,
+        "arpu": 0,
+        "ipm": 0.308475360530578,
+        "unique_purchases": 0,
+        "cpm": 43.803501195342,
+        "cpa": 0,
+        "ctr": 0.169661448291818,
+        "cvr": 5.5,
+        "cti": 0.181818181818182,
+        "installs": 4,
+        "impressions": 12967,
+        "clicks": 22,
+        "ppm": 0
+      },
+      {
+        "asset_id": "3178069632470982",
+        "asset_name": "HoV_MoonRace_V38637_15_AndroidiOSPC_English_Portrait&IMG=TT9.mp4",
+        "composite_metric": 0.482850195726776,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/274229773_508235963994858_6892725743717723461_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MoonRace_V38637_15_AndroidiOSPC_English_Portrait%26IMG%3DTT9.mp4",
+        "global_performance": 0.023,
+        "spend": 564,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 20.1428571428571,
+        "cpc": 4.2406015037594,
+        "arpu": 0,
+        "ipm": 0.482850195726776,
+        "unique_purchases": 0,
+        "cpm": 9.72598251392506,
+        "cpa": 0,
+        "ctr": 0.229353842970218,
+        "cvr": 4.75,
+        "cti": 0.210526315789474,
+        "installs": 28,
+        "impressions": 57989,
+        "clicks": 133,
+        "ppm": 0
+      },
+      {
+        "asset_id": "7479169838789930",
+        "asset_name": "HoV_LuckyStallion_V40045_20_AndroidiOSPC_English_Portrait&IMG=UWD.mp4",
+        "composite_metric": 1.11500477859191,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/278753296_354002356703665_9085895258841373182_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_LuckyStallion_V40045_20_AndroidiOSPC_English_Portrait%26IMG%3DUWD.mp4",
+        "global_performance": 0.023,
+        "spend": 560,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 80,
+        "cpc": 23.3333333333333,
+        "arpu": 0,
+        "ipm": 0.741289844329133,
+        "unique_purchases": 0,
+        "cpm": 59.3031875463306,
+        "cpa": 0,
+        "ctr": 0.254156518055703,
+        "cvr": 3.42857142857143,
+        "cti": 0.291666666666667,
+        "installs": 7,
+        "impressions": 9443,
+        "clicks": 24,
+        "ppm": 0
+      },
+      {
+        "asset_id": "549935529886107",
+        "asset_name": "HoV_MissKittyGold_V39744_15_AndroidiOSPC_English_Landscape&IMG=UO0.mp4",
+        "composite_metric": 0.581846392552366,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/278166340_3101186226876787_7034832429734286059_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MissKittyGold_V39744_15_AndroidiOSPC_English_Landscape%26IMG%3DUO0.mp4",
+        "global_performance": 0.023,
+        "spend": 538,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 59.7777777777778,
+        "cpc": 13.45,
+        "arpu": 0,
+        "ipm": 0.581846392552366,
+        "unique_purchases": 0,
+        "cpm": 34.781484354797,
+        "cpa": 0,
+        "ctr": 0.258598396689941,
+        "cvr": 4.44444444444444,
+        "cti": 0.225,
+        "installs": 9,
+        "impressions": 15468,
+        "clicks": 40,
+        "ppm": 0
+      },
+      {
+        "asset_id": "673831037165487",
+        "asset_name": "HoV_SunMoonStars_V39449_15_AndroidiOSPC_English_Portrait&IMG=UFT.mp4",
+        "composite_metric": 0.315286122155856,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/277473482_385352746764919_7592160605525129676_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_SunMoonStars_V39449_15_AndroidiOSPC_English_Portrait%26IMG%3DUFT.mp4",
+        "global_performance": 0.023,
+        "spend": 510,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 28.3333333333333,
+        "cpc": 3.31168831168831,
+        "arpu": 0,
+        "ipm": 0.315286122155856,
+        "unique_purchases": 0,
+        "cpm": 8.93310679441593,
+        "cpa": 0,
+        "ctr": 0.269744793400011,
+        "cvr": 8.55555555555556,
+        "cti": 0.116883116883117,
+        "installs": 18,
+        "impressions": 57091,
+        "clicks": 154,
+        "ppm": 0
+      },
+      {
+        "asset_id": "2413653048767229",
+        "asset_name": "HoV_GoldenBananas_V38959_15_AndroidiOSPC_English_Portrait&IMG=U27.mp4",
+        "composite_metric": 0,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/275194711_478063970696246_8046913368105358669_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_GoldenBananas_V38959_15_AndroidiOSPC_English_Portrait%26IMG%3DU27.mp4",
+        "global_performance": 0.023,
+        "spend": 507,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 14.9117647058824,
+        "cpc": 11.2666666666667,
+        "arpu": 0,
+        "ipm": 0.964185631227927,
+        "unique_purchases": 0,
+        "cpm": 14.3777092656635,
+        "cpa": 0,
+        "ctr": 0.127612804133108,
+        "cvr": 1.32352941176471,
+        "cti": 0.755555555555556,
+        "installs": 34,
+        "impressions": 35262.9191919192,
+        "clicks": 45,
+        "ppm": 0
+      },
+      {
+        "asset_id": "933019617298694",
+        "asset_name": "ALL_HoV_MoreJack-O-Lanterns_V35902_15_AndroidiOSPC_English_Portrait&IMG=RPA.mp4",
+        "composite_metric": 2.2521254433872,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/248378008_933020090631980_839692969359490199_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_MoreJack-O-Lanterns_V35902_15_AndroidiOSPC_English_Portrait%26IMG%3DRPA.mp4",
+        "global_performance": 0.023,
+        "spend": 406,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 203,
+        "cpc": 33.8333333333333,
+        "arpu": 0,
+        "ipm": 0.256673511293635,
+        "unique_purchases": 0,
+        "cpm": 52.1047227926078,
+        "cpa": 0,
+        "ctr": 0.154004106776181,
+        "cvr": 6,
+        "cti": 0.166666666666667,
+        "installs": 2,
+        "impressions": 7792,
+        "clicks": 12,
+        "ppm": 0
+      },
+      {
+        "asset_id": "221010933324367",
+        "asset_name": "ALL_HoV_ZorroWildRide_V35226_15_AndroidiOSPC_English_Landscape&IMG=R6I.mp4",
+        "composite_metric": 2.66090138034259,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/240443350_221011546657639_1923082980789074049_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/ALL_HoV_ZorroWildRide_V35226_15_AndroidiOSPC_English_Landscape%26IMG%3DR6I.mp4",
+        "global_performance": 0.023,
+        "spend": 378,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 54,
+        "cpc": 12.6,
+        "arpu": 0,
+        "ipm": 0.68748772343351,
+        "unique_purchases": 0,
+        "cpm": 37.1243370654095,
+        "cpa": 0,
+        "ctr": 0.294637595757219,
+        "cvr": 4.28571428571429,
+        "cti": 0.233333333333333,
+        "installs": 7,
+        "impressions": 10182,
+        "clicks": 30,
+        "ppm": 0
+      },
+      {
+        "asset_id": "363302885255403",
+        "asset_name": "AU_HoV_PhoenixBlast_V34396_15_AndroidiOSPC_English_Square&IMG=QJG.mp4",
+        "composite_metric": 0.512842429163639,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkboxassets.s3.amazonaws.com/assets/thumbnails/act_2747337658924217/240368512_363303395255352_9167854575408306617_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/AU_HoV_PhoenixBlast_V34396_15_AndroidiOSPC_English_Square%26IMG%3DQJG.mp4",
+        "global_performance": 0.023,
+        "spend": 367,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 30.5833333333333,
+        "cpc": 2.91269841269841,
+        "arpu": 0,
+        "ipm": 0.512842429163639,
+        "unique_purchases": 0,
+        "cpm": 15.684430958588,
+        "cpa": 0,
+        "ctr": 0.538484550621821,
+        "cvr": 10.5,
+        "cti": 0.0952380952380952,
+        "installs": 12,
+        "impressions": 23399,
+        "clicks": 126,
+        "ppm": 0
+      },
+      {
+        "asset_id": "282306447293352",
+        "asset_name": "HoV_MissKittyGold_V39741_15_AndroidiOSPC_English_Portrait&IMG=UNX.mp4",
+        "composite_metric": 0.888888888888889,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/277763948_3156164927964885_3258472733142249942_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MissKittyGold_V39741_15_AndroidiOSPC_English_Portrait%26IMG%3DUNX.mp4",
+        "global_performance": 0.023,
+        "spend": 169,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 56.3333333333333,
+        "cpc": 33.8,
+        "arpu": 0,
+        "ipm": 0.888888888888889,
+        "unique_purchases": 0,
+        "cpm": 50.0740740740741,
+        "cpa": 0,
+        "ctr": 0.148148148148148,
+        "cvr": 1.66666666666667,
+        "cti": 0.6,
+        "installs": 3,
+        "impressions": 3375,
+        "clicks": 5,
+        "ppm": 0
+      },
+      {
+        "asset_id": "1389267541536291",
+        "asset_name": "HoV_MissKittyGold_V39740_15_AndroidiOSPC_English_Portrait&IMG=UNW.mp4",
+        "composite_metric": 4.53324378777703,
+        "asset_type": "VIDEO",
+        "advertiser_priority": "1",
+        "is_active": true,
+        "image_url": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/assets/thumbnails/act_2747337658924217/278121519_126280786653670_8823710602898355147_n.jpg",
+        "creative_link": "https://blkbox-machinelearning.s3.us-west-1.amazonaws.com/Videos/act_2747337658924217/HoV_MissKittyGold_V39740_15_AndroidiOSPC_English_Portrait%26IMG%3DUNW.mp4",
+        "global_performance": 0.023,
+        "spend": 50,
+        "roas_d0": 0,
+        "roas_d7": 0,
+        "cpup": 0,
+        "d0": 0,
+        "d7": 0,
+        "cpi": 25,
+        "cpc": 10,
+        "arpu": 0,
+        "ipm": 1.9782393669634,
+        "unique_purchases": 0,
+        "cpm": 49.4559841740851,
+        "cpa": 0,
+        "ctr": 0.494559841740851,
+        "cvr": 2.5,
+        "cti": 0.4,
+        "installs": 2,
+        "impressions": 1011,
+        "clicks": 5,
+        "ppm": 0
+      }
+    ],
+    "primary_colors": [
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#9d7134"
+      },
+      {
+        "base": "#daa520",
+        "name": "goldenrod",
+        "original": "#ddd42b"
+      },
+      {
+        "base": "#006400",
+        "name": "darkgreen",
+        "original": "#2b3d0c"
+      },
+      {
+        "base": "#b22222",
+        "name": "firebrick",
+        "original": "#b70a0f"
+      },
+      {
+        "base": "#bc8f8f",
+        "name": "rosybrown",
+        "original": "#aa8ca5"
+      },
+      {
+        "base": "#800000",
+        "name": "maroon",
+        "original": "#7c0c0b"
+      },
+      {
+        "base": "#d3d3d3",
+        "name": "lightgray",
+        "original": "#d3d7b8"
+      },
+      {
+        "base": "#dc143c",
+        "name": "crimson",
+        "original": "#db2216"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#8d3f56"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#d0d7e4"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#432035"
+      },
+      {
+        "base": "#8fbc8f",
+        "name": "darkseagreen",
+        "original": "#87a99e"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#32346c"
+      },
+      {
+        "base": "#2e8b57",
+        "name": "seagreen",
+        "original": "#38757f"
+      },
+      {
+        "base": "#48d1cc",
+        "name": "mediumturquoise",
+        "original": "#59b7c2"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#7a4842"
+      },
+      {
+        "base": "#bc8f8f",
+        "name": "rosybrown",
+        "original": "#ba876b"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#ebc48f"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#595ba4"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#2a1a11"
+      },
+      {
+        "base": "#808080",
+        "name": "gray",
+        "original": "#8f696c"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#40287c"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#dcb597"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#6c6f6c"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6657c8"
+      },
+      {
+        "base": "#8fbc8f",
+        "name": "darkseagreen",
+        "original": "#83b4a1"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#4a282f"
+      },
+      {
+        "base": "#87ceeb",
+        "name": "skyblue",
+        "original": "#97d6e0"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6461b4"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#594d6c"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6c64af"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#582e0f"
+      },
+      {
+        "base": "#4b0082",
+        "name": "indigo",
+        "original": "#501e85"
+      },
+      {
+        "base": "#eee8aa",
+        "name": "palegoldenrod",
+        "original": "#e3d3a3"
+      },
+      {
+        "base": "#a9a9a9",
+        "name": "darkgray",
+        "original": "#a58fc7"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#23328f"
+      },
+      {
+        "base": "#dc143c",
+        "name": "crimson",
+        "original": "#e0322a"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#e9d8e0"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#482183"
+      },
+      {
+        "base": "#d8bfd8",
+        "name": "thistle",
+        "original": "#e9b8ca"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#65a5a8"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#180938"
+      },
+      {
+        "base": "#db7093",
+        "name": "palevioletred",
+        "original": "#bf6aae"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#2e495a"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0f052a"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#692fb5"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#652560"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#c63368"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0f0c10"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#473037"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#3152ac"
+      },
+      {
+        "base": "#f5deb3",
+        "name": "wheat",
+        "original": "#e2deb6"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1a1a38"
+      },
+      {
+        "base": "#1e90ff",
+        "name": "dodgerblue",
+        "original": "#3896df"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#df9036"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#b59962"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#88363d"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#8e4b4c"
+      },
+      {
+        "base": "#9370db",
+        "name": "mediumpurple",
+        "original": "#8e85c9"
+      },
+      {
+        "base": "#808080",
+        "name": "gray",
+        "original": "#83658b"
+      },
+      {
+        "base": "#1e90ff",
+        "name": "dodgerblue",
+        "original": "#3d9ceb"
+      },
+      {
+        "base": "#a9a9a9",
+        "name": "darkgray",
+        "original": "#8aacca"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#d8c9a0"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#2e2f45"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#303d5a"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#decd76"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#c39034"
+      },
+      {
+        "base": "#778899",
+        "name": "lightslategray",
+        "original": "#9d79a5"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#e4dddb"
+      },
+      {
+        "base": "#8b008b",
+        "name": "darkmagenta",
+        "original": "#933a7d"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#2a5c42"
+      },
+      {
+        "base": "#66cdaa",
+        "name": "mediumaquamarine",
+        "original": "#6bb1ca"
+      },
+      {
+        "base": "#4169e1",
+        "name": "royalblue",
+        "original": "#4853c8"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#890a55"
+      },
+      {
+        "base": "#dda0dd",
+        "name": "plum",
+        "original": "#d69ab2"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1a3281"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#cf2e9a"
+      },
+      {
+        "base": "#800000",
+        "name": "maroon",
+        "original": "#530835"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#d6d5e5"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0f0f2a"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#624d97"
+      },
+      {
+        "base": "#a9a9a9",
+        "name": "darkgray",
+        "original": "#c9a5ae"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#292553"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#526571"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#5eb58d"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#342d5c"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0d0a27"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#8069c1"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#725870"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#504274"
+      },
+      {
+        "base": "#87ceeb",
+        "name": "skyblue",
+        "original": "#7dbddb"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#5260c7"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#d7c49b"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#325e52"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1a112e"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#251b3b"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#b1379f"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#c3b6cf"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#71454d"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#43428d"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#4c6e4d"
+      },
+      {
+        "base": "#708090",
+        "name": "slategray",
+        "original": "#61769e"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#8b5f39"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#4a4273"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#31202a"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#b9543d"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#5d4927"
+      },
+      {
+        "base": "#f0e68c",
+        "name": "khaki",
+        "original": "#efd96b"
+      },
+      {
+        "base": "#66cdaa",
+        "name": "mediumaquamarine",
+        "original": "#60bca7"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#3a2f32"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#565343"
+      },
+      {
+        "base": "#a9a9a9",
+        "name": "darkgray",
+        "original": "#a9b6b6"
+      },
+      {
+        "base": "#48d1cc",
+        "name": "mediumturquoise",
+        "original": "#41b1e4"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#ac283d"
+      },
+      {
+        "base": "#f5deb3",
+        "name": "wheat",
+        "original": "#e6d4b4"
+      },
+      {
+        "base": "#faf0e6",
+        "name": "linen",
+        "original": "#f5ede0"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#b49a54"
+      },
+      {
+        "base": "#faf0e6",
+        "name": "linen",
+        "original": "#f7f1e6"
+      },
+      {
+        "base": "#bc8f8f",
+        "name": "rosybrown",
+        "original": "#b89796"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#e3cf97"
+      },
+      {
+        "base": "#d3d3d3",
+        "name": "lightgray",
+        "original": "#d6cfc8"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#3b4c65"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#141545"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#0a0c42"
+      },
+      {
+        "base": "#b22222",
+        "name": "firebrick",
+        "original": "#bd1a3e"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#5878aa"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1a130e"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#614f47"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#6c9dbf"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#5d6182"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#692331"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#a6803e"
+      },
+      {
+        "base": "#cd5c5c",
+        "name": "indianred",
+        "original": "#da6459"
+      },
+      {
+        "base": "#ba55d3",
+        "name": "mediumorchid",
+        "original": "#b879c6"
+      },
+      {
+        "base": "#eee8aa",
+        "name": "palegoldenrod",
+        "original": "#deda9f"
+      },
+      {
+        "base": "#3cb371",
+        "name": "mediumseagreen",
+        "original": "#3ace5b"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#81373c"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1d0836"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#873282"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#383543"
+      },
+      {
+        "base": "#cd5c5c",
+        "name": "indianred",
+        "original": "#d26c5d"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#8e2e49"
+      },
+      {
+        "base": "#8b008b",
+        "name": "darkmagenta",
+        "original": "#87388a"
+      },
+      {
+        "base": "#9acd32",
+        "name": "yellowgreen",
+        "original": "#bfca3b"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#d7cf9c"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#a58057"
+      },
+      {
+        "base": "#ba55d3",
+        "name": "mediumorchid",
+        "original": "#b67ace"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#e0d9dd"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#280a3e"
+      },
+      {
+        "base": "#8fbc8f",
+        "name": "darkseagreen",
+        "original": "#98b083"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#6c3333"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#312e59"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#903f82"
+      },
+      {
+        "base": "#00ff7f",
+        "name": "springgreen",
+        "original": "#3cfc6c"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#804937"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1f092e"
+      },
+      {
+        "base": "#f0e68c",
+        "name": "khaki",
+        "original": "#e1e17e"
+      },
+      {
+        "base": "#cd5c5c",
+        "name": "indianred",
+        "original": "#d46d5c"
+      },
+      {
+        "base": "#da70d6",
+        "name": "orchid",
+        "original": "#bd83c3"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#5a4424"
+      },
+      {
+        "base": "#dc143c",
+        "name": "crimson",
+        "original": "#db201a"
+      },
+      {
+        "base": "#daa520",
+        "name": "goldenrod",
+        "original": "#ebb72c"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#350a6c"
+      },
+      {
+        "base": "#ff4500",
+        "name": "orangered",
+        "original": "#de3d1d"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#2d0816"
+      },
+      {
+        "base": "#b22222",
+        "name": "firebrick",
+        "original": "#a61e19"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#b08e53"
+      },
+      {
+        "base": "#800000",
+        "name": "maroon",
+        "original": "#720f1b"
+      },
+      {
+        "base": "#4b0082",
+        "name": "indigo",
+        "original": "#3c06a8"
+      },
+      {
+        "base": "#66cdaa",
+        "name": "mediumaquamarine",
+        "original": "#66b89f"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1f1f41"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#493d5c"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#554a7c"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#694e5c"
+      },
+      {
+        "base": "#a9a9a9",
+        "name": "darkgray",
+        "original": "#c29fa9"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#7a61ac"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#4f5e5f"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#262344"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#06051a"
+      },
+      {
+        "base": "#b8860b",
+        "name": "darkgoldenrod",
+        "original": "#9e8e2c"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#28234e"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6e60be"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#4a3d6d"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#57478f"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#72556c"
+      },
+      {
+        "base": "#a9a9a9",
+        "name": "darkgray",
+        "original": "#c8a5b0"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#60b291"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#09061f"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#52636e"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#231f4e"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#34290e"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0d0807"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0d0806"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#386698"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#6c572b"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#24346c"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#4c9fca"
+      },
+      {
+        "base": "#ffb6c1",
+        "name": "lightpink",
+        "original": "#e1b8ae"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#24241c"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#3a525f"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#b7842e"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#cec2ac"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#d2bb63"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1e1d3f"
+      },
+      {
+        "base": "#bc8f8f",
+        "name": "rosybrown",
+        "original": "#ac8e9e"
+      },
+      {
+        "base": "#778899",
+        "name": "lightslategray",
+        "original": "#7293b2"
+      },
+      {
+        "base": "#d3d3d3",
+        "name": "lightgray",
+        "original": "#ddd2bc"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#931447"
+      },
+      {
+        "base": "#808080",
+        "name": "gray",
+        "original": "#815e87"
+      },
+      {
+        "base": "#6495ed",
+        "name": "cornflowerblue",
+        "original": "#3d9be0"
+      },
+      {
+        "base": "#3cb371",
+        "name": "mediumseagreen",
+        "original": "#3ca68f"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#2f1930"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#362231"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#4b6a99"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#3e3e74"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#56431e"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#646936"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#7e4e1f"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#ab6924"
+      },
+      {
+        "base": "#f0e68c",
+        "name": "khaki",
+        "original": "#f7e768"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#d7b569"
+      },
+      {
+        "base": "#708090",
+        "name": "slategray",
+        "original": "#7b5d9a"
+      },
+      {
+        "base": "#b8860b",
+        "name": "darkgoldenrod",
+        "original": "#b98427"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#d4c8bd"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1c1d44"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#3753b0"
+      },
+      {
+        "base": "#6495ed",
+        "name": "cornflowerblue",
+        "original": "#3d9de2"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#911344"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1a183a"
+      },
+      {
+        "base": "#6495ed",
+        "name": "cornflowerblue",
+        "original": "#729bca"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#94565d"
+      },
+      {
+        "base": "#3cb371",
+        "name": "mediumseagreen",
+        "original": "#1fc357"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#7047ae"
+      },
+      {
+        "base": "#b22222",
+        "name": "firebrick",
+        "original": "#be1210"
+      },
+      {
+        "base": "#f0e68c",
+        "name": "khaki",
+        "original": "#d4d88d"
+      },
+      {
+        "base": "#d2691e",
+        "name": "chocolate",
+        "original": "#b55a10"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#282716"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#29160f"
+      },
+      {
+        "base": "#daa520",
+        "name": "goldenrod",
+        "original": "#e89b1c"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#662c20"
+      },
+      {
+        "base": "#ba55d3",
+        "name": "mediumorchid",
+        "original": "#b879c5"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1d0835"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#672231"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#853182"
+      },
+      {
+        "base": "#eee8aa",
+        "name": "palegoldenrod",
+        "original": "#dfdaa0"
+      },
+      {
+        "base": "#3cb371",
+        "name": "mediumseagreen",
+        "original": "#3cb462"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#ab3636"
+      },
+      {
+        "base": "#cd5c5c",
+        "name": "indianred",
+        "original": "#d46558"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#232450"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#a17e3a"
+      },
+      {
+        "base": "#7b68ee",
+        "name": "mediumslateblue",
+        "original": "#7763dc"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#3d322d"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#737374"
+      },
+      {
+        "base": "#8fbc8f",
+        "name": "darkseagreen",
+        "original": "#82c263"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#dc9e42"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#4a4138"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#9f5039"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#6c8665"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#724e3b"
+      },
+      {
+        "base": "#b22222",
+        "name": "firebrick",
+        "original": "#cd201c"
+      },
+      {
+        "base": "#4169e1",
+        "name": "royalblue",
+        "original": "#3a50c4"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#d9dae4"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#c7409e"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#130b6e"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#505e72"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#315a4c"
+      },
+      {
+        "base": "#48d1cc",
+        "name": "mediumturquoise",
+        "original": "#53b6cb"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#780c4b"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1d1124"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#2f2095"
+      },
+      {
+        "base": "#f4a460",
+        "name": "sandybrown",
+        "original": "#dda66a"
+      },
+      {
+        "base": "#800000",
+        "name": "maroon",
+        "original": "#46190c"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#e0b770"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#68b291"
+      },
+      {
+        "base": "#dc143c",
+        "name": "crimson",
+        "original": "#c6283c"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#326b32"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#90412f"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#2a1254"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#332d92"
+      },
+      {
+        "base": "#4169e1",
+        "name": "royalblue",
+        "original": "#4754c7"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#70766d"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#ddb394"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#4a373d"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#c43368"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#0e0a0f"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#4e383d"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6e51cf"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#656383"
+      },
+      {
+        "base": "#66cdaa",
+        "name": "mediumaquamarine",
+        "original": "#72b79b"
+      },
+      {
+        "base": "#808080",
+        "name": "gray",
+        "original": "#916c70"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#ab3890"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#6d706c"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#dbb597"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#3f277c"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#515fcd"
+      },
+      {
+        "base": "#d2b48c",
+        "name": "tan",
+        "original": "#d9c298"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#36613d"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#434391"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#c7b7cf"
+      },
+      {
+        "base": "#6495ed",
+        "name": "cornflowerblue",
+        "original": "#74add4"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#4a2830"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#703d43"
+      },
+      {
+        "base": "#8fbc8f",
+        "name": "darkseagreen",
+        "original": "#7db5a0"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#23163c"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6456c8"
+      },
+      {
+        "base": "#808080",
+        "name": "gray",
+        "original": "#8e696d"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#180d2d"
+      },
+      {
+        "base": "#da70d6",
+        "name": "orchid",
+        "original": "#b881c4"
+      },
+      {
+        "base": "#8b008b",
+        "name": "darkmagenta",
+        "original": "#8e3d83"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#804837"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1e092f"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#312e5a"
+      },
+      {
+        "base": "#f0e68c",
+        "name": "khaki",
+        "original": "#e0e07a"
+      },
+      {
+        "base": "#3cb371",
+        "name": "mediumseagreen",
+        "original": "#39e866"
+      },
+      {
+        "base": "#cd5c5c",
+        "name": "indianred",
+        "original": "#d26d5a"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#6a3232"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#316634"
+      },
+      {
+        "base": "#6b8e23",
+        "name": "olivedrab",
+        "original": "#70ad51"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#bfbfa7"
+      },
+      {
+        "base": "#adff2f",
+        "name": "greenyellow",
+        "original": "#ade64b"
+      },
+      {
+        "base": "#f4a460",
+        "name": "sandybrown",
+        "original": "#dcb468"
+      },
+      {
+        "base": "#87ceeb",
+        "name": "skyblue",
+        "original": "#8fc4dc"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#d8b369"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#ae724a"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#72314a"
+      },
+      {
+        "base": "#daa520",
+        "name": "goldenrod",
+        "original": "#cd9823"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#bf945e"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#eccf6b"
+      },
+      {
+        "base": "#b22222",
+        "name": "firebrick",
+        "original": "#ba3614"
+      },
+      {
+        "base": "#d2691e",
+        "name": "chocolate",
+        "original": "#bd6737"
+      },
+      {
+        "base": "#f4a460",
+        "name": "sandybrown",
+        "original": "#e2c25f"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#9e8b4b"
+      },
+      {
+        "base": "#ba55d3",
+        "name": "mediumorchid",
+        "original": "#bd36cc"
+      },
+      {
+        "base": "#d3d3d3",
+        "name": "lightgray",
+        "original": "#d7ccd2"
+      },
+      {
+        "base": "#daa520",
+        "name": "goldenrod",
+        "original": "#ddac1d"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#3e121b"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#180e2a"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#424389"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#231636"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#372643"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#713e3d"
+      },
+      {
+        "base": "#9932cc",
+        "name": "darkorchid",
+        "original": "#b22aac"
+      },
+      {
+        "base": "#87ceeb",
+        "name": "skyblue",
+        "original": "#71b9d5"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#3f603e"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#c2adc0"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#5859c8"
+      },
+      {
+        "base": "#d3d3d3",
+        "name": "lightgray",
+        "original": "#d7d2cd"
+      },
+      {
+        "base": "#778899",
+        "name": "lightslategray",
+        "original": "#7b91a6"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#655046"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#5473a9"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#40445f"
+      },
+      {
+        "base": "#dc143c",
+        "name": "crimson",
+        "original": "#be1b3f"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#151543"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#0a0b40"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#19110a"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#9b6e56"
+      },
+      {
+        "base": "#2e8b57",
+        "name": "seagreen",
+        "original": "#469440"
+      },
+      {
+        "base": "#87ceeb",
+        "name": "skyblue",
+        "original": "#95c6dd"
+      },
+      {
+        "base": "#f4a460",
+        "name": "sandybrown",
+        "original": "#dfb56a"
+      },
+      {
+        "base": "#c0c0c0",
+        "name": "silver",
+        "original": "#d6c6a8"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#d8b46b"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#652f44"
+      },
+      {
+        "base": "#6b8e23",
+        "name": "olivedrab",
+        "original": "#7ba927"
+      },
+      {
+        "base": "#8fbc8f",
+        "name": "darkseagreen",
+        "original": "#84bb61"
+      },
+      {
+        "base": "#9932cc",
+        "name": "darkorchid",
+        "original": "#8b2ea4"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#2b3e85"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#451f38"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#7e484c"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#3b1b11"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#171d32"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#3f60b3"
+      },
+      {
+        "base": "#ffdead",
+        "name": "navajowhite",
+        "original": "#f0ca9c"
+      },
+      {
+        "base": "#f4a460",
+        "name": "sandybrown",
+        "original": "#d9a061"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#5a5f50"
+      },
+      {
+        "base": "#48d1cc",
+        "name": "mediumturquoise",
+        "original": "#48c1ce"
+      },
+      {
+        "base": "#db7093",
+        "name": "palevioletred",
+        "original": "#be6cb0"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#6b2966"
+      },
+      {
+        "base": "#ffc0cb",
+        "name": "pink",
+        "original": "#ebbbc9"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#4e2589"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1e0c42"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#060414"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#64a9a7"
+      },
+      {
+        "base": "#dcdcdc",
+        "name": "gainsboro",
+        "original": "#e8d7e1"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#7035ba"
+      },
+      {
+        "base": "#66cdaa",
+        "name": "mediumaquamarine",
+        "original": "#68db7f"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#220b08"
+      },
+      {
+        "base": "#800000",
+        "name": "maroon",
+        "original": "#561e14"
+      },
+      {
+        "base": "#f0e68c",
+        "name": "khaki",
+        "original": "#ecd282"
+      },
+      {
+        "base": "#cd853f",
+        "name": "peru",
+        "original": "#d27940"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#5c4446"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#7e2c1c"
+      },
+      {
+        "base": "#808080",
+        "name": "gray",
+        "original": "#948080"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#b4a47c"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#92643a"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#35120c"
+      },
+      {
+        "base": "#2e8b57",
+        "name": "seagreen",
+        "original": "#248a69"
+      },
+      {
+        "base": "#3cb371",
+        "name": "mediumseagreen",
+        "original": "#35c988"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#4089c2"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#505d24"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#34272e"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#2687a0"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#777b63"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#30484a"
+      },
+      {
+        "base": "#bdb76b",
+        "name": "darkkhaki",
+        "original": "#d09b5d"
+      },
+      {
+        "base": "#2e8b57",
+        "name": "seagreen",
+        "original": "#2c7d67"
+      },
+      {
+        "base": "#4169e1",
+        "name": "royalblue",
+        "original": "#256fd3"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#153364"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#477da3"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#24497d"
+      },
+      {
+        "base": "#6495ed",
+        "name": "cornflowerblue",
+        "original": "#58bbeb"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#ad2a46"
+      },
+      {
+        "base": "#bc8f8f",
+        "name": "rosybrown",
+        "original": "#bba68d"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#6a5887"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#100e14"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#1f5ba7"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#49736c"
+      },
+      {
+        "base": "#87ceeb",
+        "name": "skyblue",
+        "original": "#85c4ca"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#393b7f"
+      },
+      {
+        "base": "#8b4513",
+        "name": "saddlebrown",
+        "original": "#692c3b"
+      },
+      {
+        "base": "#191970",
+        "name": "midnightblue",
+        "original": "#1e1b34"
+      },
+      {
+        "base": "#cd5c5c",
+        "name": "indianred",
+        "original": "#db3e71"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#6363c5"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#e0c79a"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#2f2944"
+      },
+      {
+        "base": "#a0522d",
+        "name": "sienna",
+        "original": "#9e484d"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#76a7a8"
+      },
+      {
+        "base": "#c71585",
+        "name": "mediumvioletred",
+        "original": "#cb1c82"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#411e34"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#161034"
+      },
+      {
+        "base": "#a52a2a",
+        "name": "brown",
+        "original": "#87375a"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#4d256e"
+      },
+      {
+        "base": "#48d1cc",
+        "name": "mediumturquoise",
+        "original": "#4dbbd8"
+      },
+      {
+        "base": "#db7093",
+        "name": "palevioletred",
+        "original": "#c3637f"
+      },
+      {
+        "base": "#6a5acd",
+        "name": "slateblue",
+        "original": "#5a56a9"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#eac396"
+      },
+      {
+        "base": "#000000",
+        "name": "black",
+        "original": "#1b162b"
+      },
+      {
+        "base": "#800080",
+        "name": "purple",
+        "original": "#862963"
+      },
+      {
+        "base": "#deb887",
+        "name": "burlywood",
+        "original": "#eac48e"
+      },
+      {
+        "base": "#5f9ea0",
+        "name": "cadetblue",
+        "original": "#79a5a4"
+      },
+      {
+        "base": "#696969",
+        "name": "dimgray",
+        "original": "#8c7c54"
+      },
+      {
+        "base": "#db7093",
+        "name": "palevioletred",
+        "original": "#cc6f95"
+      },
+      {
+        "base": "#556b2f",
+        "name": "darkolivegreen",
+        "original": "#5a4c37"
+      },
+      {
+        "base": "#483d8b",
+        "name": "darkslateblue",
+        "original": "#392a81"
+      },
+      {
+        "base": "#4682b4",
+        "name": "steelblue",
+        "original": "#226bba"
+      },
+      {
+        "base": "#2f4f4f",
+        "name": "darkslategray",
+        "original": "#421f34"
+      }
+    ],
+    "tags": [
+      "Glasses",
+      "Throne",
+      "Chair",
+      "Modern Art",
+      "Circus",
+      "Costume",
+      "Fractal",
+      "Ornament",
+      "Mardi Gras",
+      "Pattern",
+      "Furniture",
+      "Minecraft",
+      "Collage",
+      "Computer",
+      "Vacation",
+      "Performer",
+      "Overwatch",
+      "Festival",
+      "Home Decor",
+      "Architecture",
+      "Room",
+      "People",
+      "Video Gaming",
+      "Parade",
+      "Neon",
+      "Meal",
+      "Angry Birds",
+      "Smile",
+      "Hotel",
+      "Weather",
+      "Smoke",
+      "Fog",
+      "Resort",
+      "Fire Truck",
+      "Building",
+      "Doodle",
+      "Carnival",
+      "Accessories",
+      "Accessory",
+      "Face",
+      "Arcade Game Machine",
+      "Drawing",
+      "Motor",
+      "Steam Engine",
+      "Engine",
+      "Cell Phone",
+      "Mobile Phone",
+      "Phone",
+      "Cat",
+      "Light",
+      "Nature",
+      "Locomotive",
+      "Clothing",
+      "Apparel",
+      "Purple",
+      "Pac Man",
+      "Electronics",
+      "Indoors",
+      "Interior Design",
+      "Musician",
+      "Flyer",
+      "Brochure",
+      "Outdoors",
+      "World Of Warcraft",
+      "Lighting",
+      "Advertisement",
+      "Poster",
+      "Leisure Activities",
+      "Word",
+      "Diwali",
+      "Crowd",
+      "Graphics",
+      "Person",
+      "Human",
+      "Neighborhood",
+      "Art",
+      "Gambling",
+      "Slot",
+      "Food",
+      "Game",
+      "Sweets",
+      "Confectionery",
+      "Gold",
+      "Paper",
+      "Truck",
+      "Train",
+      "Alphabet",
+      "Stage",
+      "Symbol",
+      "Transportation",
+      "Vehicle",
+      "Machine",
+      "Market",
+      "Bazaar",
+      "Shop",
+      "Bird",
+      "Club",
+      "Screen",
+      "Urban",
+      "Percussion",
+      "Drum",
+      "Musical Instrument",
+      "Iphone",
+      "Treasure",
+      "Pet",
+      "Toy",
+      "Text",
+      "Dj",
+      "Plant",
+      "Canine",
+      "Dog",
+      "Mammal",
+      "Legend of Zelda",
+      "Animal",
+      "Fruit",
+      "Indoor Play Area",
+      "Number",
+      "Mini Golf",
+      "Golf",
+      "LED",
+      "Menu",
+      "Hand",
+      "Giant Panda",
+      "Bear",
+      "Freeway",
+      "Highway",
+      "Asphalt",
+      "Road",
+      "Tarmac",
+      "Night Club",
+      "Laser",
+      "Wildlife",
+      "Sunglasses",
+      "Woman",
+      "Sleeve",
+      "Sports",
+      "Sport",
+      "Flare",
+      "Money",
+      "Lunch",
+      "White Board",
+      "Tiger",
+      "Lion",
+      "Trademark",
+      "Logo",
+      "Tourist",
+      "Night Life",
+      "Disco",
+      "Karaoke",
+      "Alcohol",
+      "Girl",
+      "Candy",
+      "Water",
+      "Icing",
+      "White",
+      "Insect",
+      "Bee",
+      "Invertebrate",
+      "Bottle",
+      "Honey Bee",
+      "Shaker",
+      "Amusement Park",
+      "Theme Park",
+      "Metropolis",
+      "Town",
+      "City",
+      "Street",
+      "Creme",
+      "Cream",
+      "Sea",
+      "Ocean",
+      "Sphere",
+      "Railway",
+      "Arecaceae",
+      "Chicken",
+      "Clock Tower",
+      "Fowl",
+      "Freight Car",
+      "Palm Tree",
+      "Poultry",
+      "Rail",
+      "Shipping Container",
+      "Tower",
+      "Train Track",
+      "Drink",
+      "Beverage",
+      "Astronaut",
+      "Bowling",
+      "Duel",
+      "Wristwatch",
+      "Texture",
+      "Tree",
+      "Night",
+      "Dance Pose",
+      "Female",
+      "Helmet",
+      "Dessert",
+      "Super Mario",
+      "Photography",
+      "Photo",
+      "Fire",
+      "Flame",
+      "Dome",
+      "Sky",
+      "Beer",
+      "Fish",
+      "Soil",
+      "Automobile",
+      "Car",
+      "Sunrise",
+      "Wheel",
+      "Party",
+      "Shoe",
+      "Footwear",
+      "Cake",
+      "Birthday Cake",
+      "Monitor",
+      "Display",
+      "Door",
+      "Fireworks",
+      "Candle",
+      "Grand Theft Auto",
+      "Pedestrian",
+      "Downtown",
+      "High Rise",
+      "Egg",
+      "Bull",
+      "Ball",
+      "Balloon",
+      "Housing",
+      "Bonfire",
+      "Horse",
+      "Mountain",
+      "Blossom",
+      "Flower",
+      "Rose",
+      "Confetti",
+      "Mirror",
+      "Dance",
+      "Flamenco",
+      "Petal",
+      "Fashion",
+      "Car Mirror",
+      "Tango",
+      "Gray",
+      "Heel",
+      "High Heel",
+      "Stain",
+      "Team Sport",
+      "Team",
+      "Coat",
+      "Kindergarten",
+      "Rug",
+      "Tablet Computer",
+      "Astronomy",
+      "Stallion",
+      "Field",
+      "Polo",
+      "Equestrian",
+      "Rodeo",
+      "Suit",
+      "Overcoat",
+      "Finger",
+      "Hat",
+      "Shelf",
+      "Milk",
+      "Dish",
+      "Coffee Cup",
+      "Dating",
+      "Cup",
+      "Lamp",
+      "Buffalo",
+      "Cattle",
+      "Bison",
+      "Soccer Ball",
+      "Sea Life",
+      "Football",
+      "Soccer",
+      "Easter Egg",
+      "Bubble",
+      "Church",
+      "Hurdle",
+      "Altar",
+      "Hood",
+      "Jigsaw Puzzle",
+      "Portrait",
+      "Leaf",
+      "Maple",
+      "Maple Leaf",
+      "Jacket",
+      "Painting",
+      "Universe",
+      "Outer Space",
+      "Space",
+      "Elevator",
+      "Doll",
+      "Bowl",
+      "Floral Design",
+      "Weaponry",
+      "Blade",
+      "Samurai",
+      "Ninja",
+      "Weapon",
+      "Cupboard",
+      "Cabinet",
+      "Peeps",
+      "Pants",
+      "Closet"
+    ]
+  }
+}

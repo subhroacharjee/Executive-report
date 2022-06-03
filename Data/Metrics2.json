@@ -1,0 +1,170 @@
+{
+    "status": "success",
+    "data": {
+      "date_range": {
+        "start_date": "2022-05-01",
+        "end_date": "2022-05-30",
+        "days_count": 30
+      },
+      "compared_date_range": {
+        "start_date": "2022-04-01",
+        "end_date": "2022-04-30",
+        "days_count": 30
+      },
+      "performance_metrics": {
+        "spend": {
+          "value": 39978,
+          "compared_value": 46149,
+          "status": "BELOW",
+          "inflation_percent": "13.4"
+        },
+        "d0_roas": {
+          "value": 0.022183676021812,
+          "compared_value": 0.0274788402782292,
+          "status": "BELOW",
+          "inflation_percent": "19.3"
+        },
+        "d7_roas": {
+          "value": 0.0503961178648256,
+          "compared_value": 0.0615257752063967,
+          "status": "BELOW",
+          "inflation_percent": "18.1"
+        },
+        "d28_roas": {
+          "value": 0,
+          "compared_value": 0,
+          "status": "SAME",
+          "inflation_percent": 0
+        },
+        "cpup": {
+          "value": 677.593220338983,
+          "compared_value": 699.227272727273,
+          "status": "BELOW",
+          "inflation_percent": "3.1"
+        },
+        "d0_purchase_value": {
+          "value": 886.859,
+          "compared_value": 1268.121,
+          "status": "BELOW",
+          "inflation_percent": "30.1"
+        },
+        "d7_purchase_value": {
+          "value": 2014.736,
+          "compared_value": 2839.353,
+          "status": "BELOW",
+          "inflation_percent": "29.0"
+        },
+        "cpi": {
+          "value": 28.1337086558761,
+          "compared_value": 23.8004125838061,
+          "status": "ABOVE",
+          "inflation_percent": "18.2"
+        },
+        "cpc": {
+          "value": 13.6490269716627,
+          "compared_value": 15.4241310160428,
+          "status": "BELOW",
+          "inflation_percent": "11.5"
+        },
+        "arpu": {
+          "value": 34.1480677966102,
+          "compared_value": 43.0205,
+          "status": "BELOW",
+          "inflation_percent": "20.6"
+        },
+        "ipm": {
+          "value": 0.867355457518912,
+          "compared_value": 1.31390026805534,
+          "status": "BELOW",
+          "inflation_percent": "34.0"
+        },
+        "unique_purchases": {
+          "value": 886.859,
+          "compared_value": 1268.121,
+          "status": "BELOW",
+          "inflation_percent": "30.1"
+        },
+        "cpm": {
+          "value": 24.4019257429212,
+          "compared_value": 31.2713684736905,
+          "status": "BELOW",
+          "inflation_percent": "22.0"
+        },
+        "cpa": {
+          "value": 0,
+          "compared_value": 0,
+          "status": "SAME",
+          "inflation_percent": 0
+        },
+        "ctr": {
+          "value": 0.178781431039612,
+          "compared_value": 0.20274314605578,
+          "status": "BELOW",
+          "inflation_percent": "11.8"
+        },
+        "cvr": {
+          "value": 2.06122448979592,
+          "compared_value": 1.54306343476019,
+          "status": "ABOVE",
+          "inflation_percent": "33.6"
+        },
+        "cti": {
+          "value": 0.485148514851485,
+          "compared_value": 0.648061497326203,
+          "status": "BELOW",
+          "inflation_percent": "25.1"
+        },
+        "installs": {
+          "value": 1421,
+          "compared_value": 1939,
+          "status": "BELOW",
+          "inflation_percent": "26.7"
+        },
+        "impressions": {
+          "value": 1638313.32089014,
+          "compared_value": 1475758.88912014,
+          "status": "ABOVE",
+          "inflation_percent": "11.0"
+        },
+        "clicks": {
+          "value": 2929,
+          "compared_value": 2992,
+          "status": "BELOW",
+          "inflation_percent": "2.1"
+        },
+        "ppm": {
+          "value": 0,
+          "compared_value": 0,
+          "status": "SAME",
+          "inflation_percent": 0
+        }
+      },
+      "creative_metrics": {
+        "tested_creatives": {
+          "value": 44,
+          "compared_value": 50,
+          "inflation_percent": "12.0",
+          "status": "BELOW"
+        },
+        "above_threshold_creatives": {
+          "value": 5,
+          "compared_value": 9,
+          "inflation_percent": "44.4",
+          "status": "BELOW"
+        },
+        "below_threshold_creatives": {
+          "value": 39,
+          "compared_value": 41,
+          "inflation_percent": "4.9",
+          "status": "BELOW"
+        },
+        "win_rate_percent": {
+          "value": 0.11,
+          "compared_value": 0.18,
+          "inflation_percent": "38.9",
+          "status": "BELOW"
+        }
+      },
+      "inventory": 127
+    }
+  }

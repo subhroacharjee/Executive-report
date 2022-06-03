@@ -25,5 +25,3 @@ def verify_data(data):
     if data.get('start_date') == None or data.get('end_date') == None:
         raise Exception('Verify date range')
     
-    if data.get('phase_name') == None:
-        raise Exception('Verify phase name')

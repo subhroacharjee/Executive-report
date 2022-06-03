@@ -7,39 +7,81 @@ from quickchart import QuickChart, QuickChartFunction
 
 from src.communication import Communication
 from src.parser import get_data_from_request
-config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf')
+#config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf')
 
 app = Flask(__name__)
 data = {}
 #Read Data from Json
-data = None
-metrics = None
-top_creative = None
+graph_data_phase_1 = None
+metrics_phase_1= None
+top_creative_phase_1= None
 
+graph_data_phase_2 = None
+metrics_phase_2 = None
+top_creative_phase_2= None
+
+with open('Data/Time series graph.json', 'r') as f1:
+  graph_data_phase_1 = json.load(f1)
+
+with open('Data/Metrics.json', 'r') as f2:
+  metrics_phase_1 = json.load(f2)
+
+with open('Data/Top Creative Insights.json', 'r') as f3:
+  top_creative_phase_1 = json.load(f3)
+
+
+with open('Data/Time series graph2.json', 'r') as f4:
+  graph_data_phase_2 = json.load(f4)
+
+with open('Data/Metrics2.json', 'r') as f5:
+  metrics_phase_2 = json.load(f5)
+
+with open('Data/Top Creative Insights2.json', 'r') as f6:
+  top_creative_phase_2 = json.load(f6)
 
 @app.route('/',methods=['GET','POST'])
 def index():
-    req_data = get_data_from_request(request)
-    if not req_data:
-        raise Exception('Invalid data')
-    comm = Communication(req_data['adaccount_id'], req_data['start_date'], req_data['end_date'], req_data['phase_name'])
-    server_data = comm.make_async_requests()
-    metrics = server_data[0]
-    data = server_data[1]
-    top_creative = server_data[2]
-    p_data,label=process_data(data)
+    # req_data = get_data_from_request(request)
+    # if not req_data:
+    #     raise Exception('Invalid data')
+    # comm = Communication(req_data['adaccount_id'], req_data['start_date'], req_data['end_date'])
+    # server_data = comm.make_async_requests()
+    # #print(server_data)
+    # metrics = server_data[0]
+    # data = server_data[1]
+    # top_creative ='' 
+    # #server_data[2]
+    # print("server",server_data)
 
-    date=index_date(metrics['date_range'])
-    print(date)
-    img_list=[]
-    for i in p_data:
-        img_list.append(chartjs(p_data[i],label['label'],i))
+    
 
-    phase_name = 'Phase 1' if req_data['phase_name'].upper() == 'PHASE_ONE' else 'Phase 2'
-    rendered = render_template('index.html',index_date=date,img=img_list,metrics=metrics,top_creative=top_creative, phase_name = phase_name)
+
+    phase_1_data,label_1=process_data(graph_data_phase_1)
+    chart_list_phase_1=[]
+    for i in phase_1_data:
+        chart_list_phase_1.append(chartjs(phase_1_data[i],label_1['label'],i))
+
+    phase_2_data,label_2=process_data(graph_data_phase_2)
+    chart_list_phase_2=[]
+    for i in phase_2_data:
+        chart_list_phase_2.append(chartjs(phase_2_data[i],label_2['label'],i))
+    
+    final_data={
+        'index_date':index_date(metrics_phase_1['data']['date_range']),
+        'phase1':{
+            'charts':chart_list_phase_1,
+            'metrics':metrics_phase_1,
+            'top_creative':top_creative_phase_1
+        },
+        'phase2':{
+            'charts':chart_list_phase_2,
+            'metrics':metrics_phase_2,
+            'top_creative':top_creative_phase_2
+        }
+    }
+    rendered = render_template('index.html',final_data=final_data)
     
     options = {
-        
     'page-size': 'A4',
     'margin-right': '0.20in',
     'margin-bottom': '0.20in',
@@ -48,7 +90,7 @@ def index():
     }
 
 
-    pdf=pdfkit.from_string(rendered,options=options, configuration=config, verbose=True)
+    pdf=pdfkit.from_string(rendered,options=options, verbose=True)
 
     response = make_response(pdf)
     response.headers['Content-type']='application/pdf'
@@ -59,8 +101,8 @@ def index():
 
 
 def process_data(data):
-    keys=data['filter_metrics']
-    process_data=data['time_series_graph']
+    keys=data['data']['filtered_metrics']
+    process_data=data['data']['time_series_graph']
     label=dict()
     temp_dict=dict()
     for i in keys:
@@ -70,21 +112,18 @@ def process_data(data):
             if i in d.keys():
                 temp_dict[i].append(d[i])
                 label['label'].append(date_time(d['label']))
-                #label['label'].append(urllib.parse.quote("'" + date_time(d['label']) + "'"))
     return temp_dict,label
 
 
 
 def chartjs(data,label,key):
     key=key.upper()
-    #label = ','.join([str(a) for a in label])
-    #data = ','.join([str(a) for a in data])
-
     qc = QuickChart()
-    qc.width = 400
-    qc.height = 240
+    qc.width = 800
+    qc.height = 480
     qc.device_pixel_ratio = 3.0
     qc.version=3
+    
     qc.config = {
          'type': 'line', 
          'data': { 
@@ -101,12 +140,6 @@ def chartjs(data,label,key):
                   'pointRadius':2}, ],}, 
                   'options': { 'scales': {'x': {'grid': {'display': False}}}, 'plugins': { 'legend': {'position': 'top','align': 'start','labels': { 'boxWidth': 0,'font': {'size': 17} }, } 
                   } }}
-
-
-    #chart="http://localhost:3400/chart?v=3&c={ type: 'line', data: { labels: ["+label+"], datasets: [ { label: '"+key+"',backgroundColor: 'rgb(204,229,255)', borderColor: 'rgb(0,191,255)', data: ["+data+"], fill: false, borderWidth:1,pointRadius:2}, ], }, options: { scales: { x: {grid: {display: false}}}, plugins: { legend: {position: 'top',align: 'start',labels: { boxWidth: 0,} }, } } }"
-    
-    
-    #chart="https://quickchart.io/chart?v=3&c=%7B%0A%20%20type%3A%20%27line%27%2C%0A%20%20data%3A%20%7B%0A%20%20%20%20labels%3A%20%5B%27January%27%2C%20%27February%27%2C%20%27March%27%2C%20%27April%27%2C%20%27May%27%2C%20%27June%27%2C%20%27July%27%5D%2C%0A%20%20%20%20datasets%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20label%3A%20%27My%20First%20dataset%27%2C%0A%20%20%20%20%20%20%20%20backgroundColor%3A%20%27rgb(255%2C%2099%2C%20132)%27%2C%0A%20%20%20%20%20%20%20%20borderColor%3A%20%27rgb(255%2C%2099%2C%20132)%27%2C%0A%20%20%20%20%20%20%20%20data%3A%20%5B93%2C%2029%2C%2017%2C%208%2C%2073%2C%2098%2C%2040%5D%2C%0A%20%20%20%20%20%20%20%20fill%3Atrue%2C%0A%20%20%20%20%20%20%20%20backgroundColor%3A%20getGradientFillHelper(%27vertical%27%2C%20%5B%27%236287a2%27%2C%20%27%23e9ecf4%27%5D)%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%7D%2C%0A%20%20options%3A%20%7B%0A%20%20%20%20title%3A%20%7B%0A%20%20%20%20%20%20display%3A%20true%2C%0A%20%20%20%20%20%20text%3A%20%27Chart.js%20Line%20Chart%27%2C%0A%20%20%20%20%7D%2C%0A%20%20%7D%2C%0A%7D%0A"
     return qc.get_url()
 
 
@@ -130,6 +163,7 @@ def index_date(date):
     final={'day':d,'year':year}
 
     return final
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)

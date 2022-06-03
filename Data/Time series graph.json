@@ -476,7 +476,7 @@
           "cost_per_subscriptions": 0
         }
       ],
-      "filter_metrics": [
+      "filtered_metrics": [
         "ipm",
         "cpa",
         "cpm",

@@ -4,21 +4,19 @@ import threading as thrd
 USER_EMAIL = 'subhro.acharjee@blkbox.ai'
 USER_PASSWORD = 'password@123'
 
-API_BASE_URL = 'http://localhost:3000/api/v0.1/facebook'
-API_DUMMY_SERVER = 'https://feb1fad4-11fa-460d-b00d-75350a028cad.mock.pstmn.io/api/v0.1/facebook'
+API_BASE_URL = 'https://b65b-2405-201-2006-58-d039-6481-84a3-9da0.in.ngrok.io/api/v0.1'
 
 class Communication:
     '''
     This class will handle the communication with backend.
     '''
 
-    def __init__(self, adaccount_id, start_date, end_date, phase_name='phase_one') -> None:
+    def __init__(self, adaccount_id, start_date, end_date) -> None:
         self.token  = self.get_token()
         self.adaccount_id = adaccount_id
         self.start_date = start_date
         self.end_date = end_date
-        self.phase_name = phase_name
-        self.response_arr = [None, None, None]
+        self.response_arr = [None, None,None,None, None,None]
         pass
 
     def get_token(self):
@@ -33,6 +31,7 @@ class Communication:
 
         uri = f'{API_BASE_URL}/user/login'
         response = requests.post(uri, login_data)
+        print(response.ok)
         if (response.ok):
             data = response.json()
             if (data.get('status') == 'success'):
@@ -44,13 +43,17 @@ class Communication:
         header = {
             "Authorization": f"Bearer {self.token}"
         }
-        metric_uri = f'{API_BASE_URL}/box/creativeTesting/executiveReport/metrics?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name={self.phase_name}'
-        graph_uri = f'{API_DUMMY_SERVER}/box/creativeTesting/executiveReport/graph?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name={self.phase_name}'
-        creatives_uri = f'{API_DUMMY_SERVER}/box/creativeTesting/executiveReport/creatives?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name={self.phase_name}'
-        return header, (metric_uri, graph_uri, creatives_uri)
+        creatives_uri_phase1  = f'{API_BASE_URL}/box/creativeTesting/executiveReport/creatives?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name=PHASE_ONE'
+        metric_uri_phase1 = f'{API_BASE_URL}/box/creativeTesting/executiveReport/metrics?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name=PHASE_ONE'
+        graph_uri_phase1  = f'{API_BASE_URL}/box/creativeTesting/executiveReport/graphs?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name=PHASE_ONE'
+        creatives_uri_phase2  = f'{API_BASE_URL}/box/creativeTesting/executiveReport/creatives?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name=PHASE_TWO'
+        metric_uri_phase2 = f'{API_BASE_URL}/box/creativeTesting/executiveReport/metrics?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name=PHASE_TWO'
+        graph_uri_phase2  = f'{API_BASE_URL}/box/creativeTesting/executiveReport/graphs?adaccount_id={self.adaccount_id}&start_date={self.start_date}&end_date={self.end_date}&phase_name=PHASE_TWO'
+        return header, (metric_uri_phase1 , graph_uri_phase1, creatives_uri_phase1,metric_uri_phase2 , graph_uri_phase2, creatives_uri_phase2)
     
     @staticmethod
     def get_data_from_server(header, uri, arr:list, index):
+        print(index)
         '''
         calls the metrics api to get all the metrics data.
         '''
@@ -70,20 +73,24 @@ class Communication:
         '''
         header, uris = self.make_requests_data()
         thread_arr = []
+        print(uris)
         for i,uri in enumerate(uris):
+            print(i)
+            print(uri)
             th = thrd.Thread(target=Communication.get_data_from_server, args=(header, uris, self.response_arr, i), daemon=True, name= f'Async request {i}')
             th.start()
             thread_arr.append(th)
+            print(self.response_arr)
         
         for thread in thread_arr:
             thread.join()
-
+        
         return self.response_arr
 
 
 if __name__ == '__main__':
-    com = Communication('act_2747337658924217', '2022-05-01', '2022-05-20', 'PHASE_ONE')
+    com = Communication('act_2747337658924217', '2022-05-01', '2022-05-20')
     data_arr = com.make_async_requests()
-    print(data_arr)
+    #print(data_arr)
     
 
