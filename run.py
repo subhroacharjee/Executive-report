@@ -53,6 +53,14 @@ def index():
     # #server_data[2]
     # print("server",server_data)
 
+    # graph_data_phase_1 =
+    # metrics_phase_1= 
+    # top_creative_phase_1= 
+
+    # graph_data_phase_2 = 
+    # metrics_phase_2 = 
+    # top_creative_phase_2= 
+
     
 
 
