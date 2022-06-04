@@ -1,3 +1,4 @@
+import base64
 import json
 from locale import YESEXPR
 from flask import Flask, jsonify, make_response, render_template, request
@@ -7,7 +8,12 @@ from quickchart import QuickChart, QuickChartFunction
 
 from src.communication import Communication
 from src.parser import get_data_from_request
-#config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf')
+#config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf') 
+
+import base64
+import plotly.graph_objects as go
+import plotly.io as pio
+
 
 app = Flask(__name__)
 data = {}
@@ -20,47 +26,47 @@ graph_data_phase_2 = None
 metrics_phase_2 = None
 top_creative_phase_2= None
 
-with open('Data/Time series graph.json', 'r') as f1:
-  graph_data_phase_1 = json.load(f1)
+# with open('Data/Time series graph.json', 'r') as f1:
+#   graph_data_phase_1 = json.load(f1)
 
-with open('Data/Metrics.json', 'r') as f2:
-  metrics_phase_1 = json.load(f2)
+# with open('Data/Metrics.json', 'r') as f2:
+#   metrics_phase_1 = json.load(f2)
 
-with open('Data/Top Creative Insights.json', 'r') as f3:
-  top_creative_phase_1 = json.load(f3)
+# with open('Data/Top Creative Insights.json', 'r') as f3:
+#   top_creative_phase_1 = json.load(f3)
 
 
-with open('Data/Time series graph2.json', 'r') as f4:
-  graph_data_phase_2 = json.load(f4)
+# with open('Data/Time series graph2.json', 'r') as f4:
+#   graph_data_phase_2 = json.load(f4)
 
-with open('Data/Metrics2.json', 'r') as f5:
-  metrics_phase_2 = json.load(f5)
+# with open('Data/Metrics2.json', 'r') as f5:
+#   metrics_phase_2 = json.load(f5)
 
-with open('Data/Top Creative Insights2.json', 'r') as f6:
-  top_creative_phase_2 = json.load(f6)
+# with open('Data/Top Creative Insights2.json', 'r') as f6:
+#   top_creative_phase_2 = json.load(f6)
 
 @app.route('/',methods=['GET','POST'])
 def index():
-    # req_data = get_data_from_request(request)
-    # if not req_data:
-    #     raise Exception('Invalid data')
-    # comm = Communication(req_data['adaccount_id'], req_data['start_date'], req_data['end_date'])
-    # server_data = comm.make_async_requests()
-    # #print(server_data)
-    # metrics = server_data[0]
-    # data = server_data[1]
-    # top_creative ='' 
-    # #server_data[2]
-    # print("server",server_data)
+    req_data = get_data_from_request(request)
+    if not req_data:
+        raise Exception('Invalid data')
+    comm = Communication(req_data['adaccount_id'], req_data['start_date'], req_data['end_date'])
+    server_data = comm.make_async_requests()
 
-    # graph_data_phase_1 =
-    # metrics_phase_1= 
-    # top_creative_phase_1= 
+    for i in range(5):
+        if len(server_data[i])>0:
+            print("")
+        else:
+            server_data[i]=[]
 
-    # graph_data_phase_2 = 
-    # metrics_phase_2 = 
-    # top_creative_phase_2= 
+    metrics_phase_1=server_data[0]
+    graph_data_phase_1 =server_data[1]
+   
+    top_creative_phase_1= server_data[2]
 
+    metrics_phase_2 = server_data[3]
+    graph_data_phase_2 = server_data[4] 
+    top_creative_phase_2= server_data[5]
     
 
 
@@ -75,16 +81,18 @@ def index():
         chart_list_phase_2.append(chartjs(phase_2_data[i],label_2['label'],i))
     
     final_data={
-        'index_date':index_date(metrics_phase_1['data']['date_range']),
+        'index_date':index_date(metrics_phase_1['date_range']),
         'phase1':{
             'charts':chart_list_phase_1,
             'metrics':metrics_phase_1,
-            'top_creative':top_creative_phase_1
+            'top_creative':top_creative_phase_1,
+            'win_rate_chart':win_rate_chart()
         },
         'phase2':{
             'charts':chart_list_phase_2,
             'metrics':metrics_phase_2,
-            'top_creative':top_creative_phase_2
+            'top_creative':top_creative_phase_2,
+            'win_rate_chart':win_rate_chart()
         }
     }
     rendered = render_template('index.html',final_data=final_data)
@@ -109,8 +117,14 @@ def index():
 
 
 def process_data(data):
-    keys=data['data']['filtered_metrics']
-    process_data=data['data']['time_series_graph']
+    keys=data['filter_metrics']
+    print(keys)
+    print(data['show_metrics'])
+    if len(data['show_metrics'])>0:
+        keys.remove(data['show_metrics'][0])
+        keys.insert(0,data['show_metrics'][0]) 
+    print("f",keys)
+    process_data=data['time_series_graph']
     label=dict()
     temp_dict=dict()
     for i in keys:
@@ -127,8 +141,8 @@ def process_data(data):
 def chartjs(data,label,key):
     key=key.upper()
     qc = QuickChart()
-    qc.width = 800
-    qc.height = 480
+    qc.width = 900
+    qc.height = 400
     qc.device_pixel_ratio = 3.0
     qc.version=3
     
@@ -171,6 +185,25 @@ def index_date(date):
     final={'day':d,'year':year}
 
     return final
+
+
+def win_rate_chart():
+    fig = go.Figure(go.Indicator(
+    domain = {'x': [0, 1], 'y': [0, 1]},
+    value = 450,
+    mode = "gauge+number+delta",
+    title = {'text': "Speed"},
+    delta = {'reference': 380},
+    gauge = {'axis': {'range': [None, 500]},
+             'steps' : [
+                 {'range': [0, 250], 'color': "lightgray"},
+                 {'range': [250, 400], 'color': "gray"}],
+             'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 490}}))
+
+    png =pio.to_image(fig)
+    png_base64 = base64.b64encode(png).decode('ascii')
+    return png_base64
+
 
 
 if __name__ == '__main__':

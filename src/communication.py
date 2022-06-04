@@ -4,7 +4,7 @@ import threading as thrd
 USER_EMAIL = 'subhro.acharjee@blkbox.ai'
 USER_PASSWORD = 'password@123'
 
-API_BASE_URL = 'https://b65b-2405-201-2006-58-d039-6481-84a3-9da0.in.ngrok.io/api/v0.1'
+API_BASE_URL = 'https://server.blkbox.ai/api/v0.1/facebook'
 
 class Communication:
     '''
