@@ -17,7 +17,7 @@ import plotly.io as pio
 
 app = Flask(__name__)
 data = {}
-#Read Data from Json
+
 graph_data_phase_1 = None
 metrics_phase_1= None
 top_creative_phase_1= None
@@ -25,25 +25,6 @@ top_creative_phase_1= None
 graph_data_phase_2 = None
 metrics_phase_2 = None
 top_creative_phase_2= None
-
-# with open('Data/Time series graph.json', 'r') as f1:
-#   graph_data_phase_1 = json.load(f1)
-
-# with open('Data/Metrics.json', 'r') as f2:
-#   metrics_phase_1 = json.load(f2)
-
-# with open('Data/Top Creative Insights.json', 'r') as f3:
-#   top_creative_phase_1 = json.load(f3)
-
-
-# with open('Data/Time series graph2.json', 'r') as f4:
-#   graph_data_phase_2 = json.load(f4)
-
-# with open('Data/Metrics2.json', 'r') as f5:
-#   metrics_phase_2 = json.load(f5)
-
-# with open('Data/Top Creative Insights2.json', 'r') as f6:
-#   top_creative_phase_2 = json.load(f6)
 
 @app.route('/',methods=['GET','POST'])
 def index():
@@ -54,7 +35,7 @@ def index():
     server_data = comm.make_async_requests()
 
     for i in range(5):
-        if len(server_data[i])>0:
+        if server_data[i]:
             print("")
         else:
             server_data[i]=[]
@@ -68,7 +49,7 @@ def index():
     graph_data_phase_2 = server_data[4] 
     top_creative_phase_2= server_data[5]
     
-
+    print(metrics_phase_1['creative_metrics']['win_rate_percent'])
 
     phase_1_data,label_1=process_data(graph_data_phase_1)
     chart_list_phase_1=[]
@@ -118,8 +99,6 @@ def index():
 
 def process_data(data):
     keys=data['filter_metrics']
-    print(keys)
-    print(data['show_metrics'])
     if len(data['show_metrics'])>0:
         keys.remove(data['show_metrics'][0])
         keys.insert(0,data['show_metrics'][0]) 
@@ -189,16 +168,13 @@ def index_date(date):
 
 def win_rate_chart():
     fig = go.Figure(go.Indicator(
-    domain = {'x': [0, 1], 'y': [0, 1]},
-    value = 450,
-    mode = "gauge+number+delta",
-    title = {'text': "Speed"},
-    delta = {'reference': 380},
-    gauge = {'axis': {'range': [None, 500]},
-             'steps' : [
-                 {'range': [0, 250], 'color': "lightgray"},
-                 {'range': [250, 400], 'color': "gray"}],
-             'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 490}}))
+        domain = {'x': [0, 1], 'y': [0, 1]},
+        value = 80,
+        mode = "gauge+number",
+        gauge = {'axis': {'range': [None, 100]},
+                'bar': {'color': "#0099ff"},
+                'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 80}}))
+        
 
     png =pio.to_image(fig)
     png_base64 = base64.b64encode(png).decode('ascii')

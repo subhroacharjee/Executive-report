@@ -88,9 +88,6 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['spend']['inflation_percent']}}%</span
                     >
@@ -131,9 +128,6 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['ipm']['inflation_percent']}}%</span
                     >
@@ -170,9 +164,6 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
                       {{final_data['phase1']['metrics']['performance_metrics']['cpi']['inflation_percent']}}%</span
                     >
 
@@ -211,9 +202,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['cpm']['inflation_percent']}}%</span
                     >
@@ -255,9 +244,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                    
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['cpa']['inflation_percent']}}%</span
                     >
@@ -297,9 +284,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['ctr']['inflation_percent']}}%</span
                     >
@@ -339,9 +324,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['cti']['inflation_percent']}}%</span
                     >
@@ -381,9 +364,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase1']['metrics']['performance_metrics']['cpup']['inflation_percent']}}%</span
                     >
@@ -425,9 +406,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+              
                       {{
                       final_data['phase1']['metrics']['creative_metrics']['tested_creatives']['inflation_percent']}}%</span
                     >
@@ -467,9 +446,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                    
                       {{
                       final_data['phase1']['metrics']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}%</span
                     >
@@ -509,9 +486,7 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+          
                       {{
                       final_data['phase1']['metrics']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}%</span
                     >
@@ -537,6 +512,36 @@
             <div class="guage-chart">
               <img src="data:image/png;base64,{{ final_data['phase1']['win_rate_chart'] }}" style="height:300px;padding-left:50px">
             </div>
+            <p style="text-align: center;"> 
+              {% if
+              final_data['phase1']['metrics']['creative_metrics']['win_rate_percent']['status']=='ABOVE'%}
+              <span class="above">
+                <img
+                  src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
+                />
+                {{
+                final_data['phase1']['metrics']['creative_metrics']['win_rate_percent']['inflation_percent']}}%</span
+              >
+
+              {% elif
+              final_data['phase1']['metrics']['creative_metrics']['win_rate_percent']['status']=='BELOW'%}
+              <span class="below">
+                <img
+                  src="{{ url_for('static',filename='logo/below.svg',_external=True) }}"
+                />
+                {{
+                final_data['phase1']['metrics']['creative_metrics']['win_rate_percent']['inflation_percent']}}%</span
+              >
+
+              {%else%}
+              <span class="same">
+                {{
+                final_data['phase1']['metrics']['creative_metrics']['win_rate_percent']['inflation_percent']}}%</span
+              >
+
+              {%endif%}vs
+              Prev.{{final_data['phase1']['metrics']['compared_date_range']['days_count']}} Days
+            </p>
           </div>  
         </section>
       </div>
@@ -735,15 +740,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                      
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['spend']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs Prev.
-                    {{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -777,16 +779,11 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                      
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['ipm']['inflation_percent']}}%</span
                     >
-
-                    {%endif%}vs Prev.
-                    {{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -821,15 +818,11 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{final_data['phase2']['metrics']['performance_metrics']['d0_roas']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -863,16 +856,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                      
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['d7_roas']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -908,16 +897,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                  
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['cpa']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -951,16 +936,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['ctr']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}} Days
                   </p>
                 </div>
               </div>
@@ -994,16 +975,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['cti']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -1037,16 +1014,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase2']['metrics']['performance_metrics']['cpup']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -1082,16 +1055,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                      
                       {{
                       final_data['phase2']['metrics']['creative_metrics']['tested_creatives']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -1125,16 +1094,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase2']['metrics']['creative_metrics']['above_threshold_creatives']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -1168,16 +1133,12 @@
 
                     {%else%}
                     <span class="same">
-                      <img
-                        src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
-                      />
+                     
                       {{
                       final_data['phase2']['metrics']['creative_metrics']['below_threshold_creatives']['inflation_percent']}}%</span
                     >
 
-                    {%endif%}vs
-                    Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}
-                    Days
+                    {%endif%}vs Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}}Days
                   </p>
                 </div>
               </div>
@@ -1197,6 +1158,36 @@
             <div class="guage-chart">
               <img src="data:image/png;base64,{{ final_data['phase2']['win_rate_chart'] }}" style="height:300px;padding-left:50px">
             </div>
+            <p style="text-align: center;"> 
+              {% if
+              final_data['phase2']['metrics']['creative_metrics']['win_rate_percent']['status']=='ABOVE'%}
+              <span class="above">
+                <img
+                  src="{{ url_for('static',filename='logo/above.svg',_external=True) }}"
+                />
+                {{
+                final_data['phase2']['metrics']['creative_metrics']['win_rate_percent']['inflation_percent']}}%</span
+              >
+
+              {% elif
+              final_data['phase2']['metrics']['creative_metrics']['win_rate_percent']['status']=='BELOW'%}
+              <span class="below">
+                <img
+                  src="{{ url_for('static',filename='logo/below.svg',_external=True) }}"
+                />
+                {{
+                final_data['phase2']['metrics']['creative_metrics']['win_rate_percent']['inflation_percent']}}%</span
+              >
+
+              {%else%}
+              <span class="same">
+                {{
+                final_data['phase2']['metrics']['creative_metrics']['win_rate_percent']['inflation_percent']}}%</span
+              >
+
+              {%endif%}vs
+              Prev.{{final_data['phase2']['metrics']['compared_date_range']['days_count']}} Days
+            </p>
           </div>
         </section>
       </div>
